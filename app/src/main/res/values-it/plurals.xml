@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <plurals name="pref_look_and_feel_rules_timeout_summary">
+        <item quantity="one">Fermarsi dopo %d secondo</item>
+        <item quantity="other">Fermarsi dopo %d Secondi</item>
+    </plurals>
+</resources>

@@ -8,8 +8,8 @@
         android:shortcutDisabledMessage="@string/shortcut_disabled">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetPackage="io.github.domi04151309.alwayson"
-            android:targetClass="io.github.domi04151309.alwayson.activities.LAFWatchFaceActivity" />
+            android:targetPackage="heitezy.peekdisplay"
+            android:targetClass="heitezy.peekdisplay.activities.LAFWatchFaceActivity" />
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
     <shortcut
@@ -21,8 +21,8 @@
         android:shortcutDisabledMessage="@string/shortcut_disabled">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetPackage="io.github.domi04151309.alwayson"
-            android:targetClass="io.github.domi04151309.alwayson.activities.LAFBackgroundActivity" />
+            android:targetPackage="heitezy.peekdisplay"
+            android:targetClass="heitezy.peekdisplay.activities.LAFBackgroundActivity" />
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
     <shortcut
@@ -34,8 +34,8 @@
         android:shortcutDisabledMessage="@string/shortcut_disabled">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetPackage="io.github.domi04151309.alwayson"
-            android:targetClass="io.github.domi04151309.alwayson.activities.LAFRulesActivity" />
+            android:targetPackage="heitezy.peekdisplay"
+            android:targetClass="heitezy.peekdisplay.activities.LAFRulesActivity" />
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
     <shortcut
@@ -47,8 +47,8 @@
         android:shortcutDisabledMessage="@string/shortcut_disabled">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetPackage="io.github.domi04151309.alwayson"
-            android:targetClass="io.github.domi04151309.alwayson.activities.LAFBehaviorActivity" />
+            android:targetPackage="heitezy.peekdisplay"
+            android:targetClass="heitezy.peekdisplay.activities.LAFBehaviorActivity" />
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
 </shortcuts>

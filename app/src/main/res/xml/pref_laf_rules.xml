@@ -15,6 +15,22 @@
         android:summary="@string/pref_look_and_feel_rules_ambient_mode_summary"
         android:title="@string/pref_look_and_feel_rules_ambient_mode" />
 
+    <SwitchPreference
+        android:defaultValue="false"
+        android:icon="@drawable/ic_vibration"
+        android:key="rules_pickup_mode"
+        android:summary="@string/pref_look_and_feel_rules_pickup_mode_summary"
+        android:title="@string/pref_look_and_feel_rules_pickup_mode" />
+
+    <ListPreference
+        android:defaultValue="2"
+        android:entries="@array/pref_pickup_sensitivity_display"
+        android:entryValues="@array/pref_pickup_sensitivity_values"
+        android:icon="@drawable/ic_vibration"
+        android:key="pickup_sensitivity"
+        android:summary="@string/pref_pickup_sensitivity_summary"
+        android:title="@string/pref_pickup_sensitivity" />
+
     <Preference
         android:icon="@drawable/ic_notification"
         android:key="pref_filter_notifications"
@@ -39,7 +55,7 @@
         android:summary="@string/pref_look_and_feel_rules_charger_summary"
         android:title="@string/pref_look_and_feel_rules_charger" />
 
-    <io.github.domi04151309.alwayson.custom.EditIntegerPreference
+    <heitezy.peekdisplay.custom.EditIntegerPreference
         android:defaultValue="0"
         android:icon="@drawable/ic_percent"
         android:key="rules_battery_level"
@@ -52,7 +68,7 @@
         android:summary="@string/loading"
         android:title="@string/pref_look_and_feel_rules_time" />
 
-    <io.github.domi04151309.alwayson.custom.EditIntegerPreference
+    <heitezy.peekdisplay.custom.EditIntegerPreference
         android:defaultValue="0"
         android:icon="@drawable/ic_timer"
         android:key="rules_timeout_sec"

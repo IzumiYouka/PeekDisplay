@@ -1,145 +1,282 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="device_admin_description">Permitir que AlwaysOn apague su pantalla</string>
-    <string name="notification_listener_description">Muestra las notificaciones en el siempre en pantalla</string>
-
-    <string name="service_text">AlwaysOn está corriendo en el fondo</string>
+    <string name="device_admin_description">Permitir que la pantalla de vista apague la pantalla</string>
+    <string name="notification_listener_description">Mostrar notificaciones en la pantalla</string>
+    <string name="service_text">La pantalla de vista se ejecuta en el fondo</string>
     <string name="service_channel">Canal de servicio</string>
-
-    <string name="setup_root_failed">¡Solicitud de root fallida! ¡Por favor, inténtelo de nuevo o cambie de modo!</string>
-    <string name="device_admin">Administración del dispositivo</string>
-    <string name="device_admin_summary">Necesitas activar el administrador del dispositivo o cambiar al modo root para que esta aplicación funcione.</string>
+    <string name="setup_root_failed">¡Falló la solicitud de la raíz! ¡Inténtelo de nuevo o cambie el modo!</string>
+    <string name="device_admin">Administrador del dispositivo</string>
+    <string name="device_admin_summary">Debe activar este administrador del dispositivo o cambiar al modo root para que esta aplicación funcione.</string>
     <string name="notification_listener_service">Acceso a la notificación</string>
-    <string name="notification_listener_service_summary">Necesitas habilitar el acceso a las notificaciones para que la aplicación muestre tus notificaciones en la pantalla siempre encendida.</string>
-    <string name="setup_draw_over_other_apps">Mostrar sobre otras aplicaciones</string>
-    <string name="setup_draw_over_other_apps_summary">Este permiso es necesario para mostrar el siempre en pantalla.</string>
+    <string name="notification_listener_service_summary">Debe habilitar el acceso a la notificación para la aplicación para mostrar sus notificaciones en la pantalla PEEK.</string>
+    <string name="setup_draw_over_other_apps">Muestra sobre otras aplicaciones</string>
+    <string name="setup_draw_over_other_apps_summary">Se requiere este permiso para mostrar visualización de PEEK.</string>
+    <string name="setup_phone_state">Leer Estado del teléfono</string>
+    <string name="setup_phone_state_summary">Se requiere este permiso para detener la visualización de PEEK para llamadas entrantes.</string>
+    <string name="setup_calendar">Leer Calendario</string>
+    <string name="setup_calendar_summary">Debe habilitar el acceso al calendario para la aplicación para mostrar sus eventos en la pantalla PEEK.</string>
+    <string name="setup_skip">Saltar</string>
     <string name="setup_continue">Continuar</string>
-    <string name="setup_error">¡Algo salió mal! ¡Por favor, inténtalo de nuevo!</string>
-
-    <string name="AlwaysOn">Siempre en pantalla</string>
-
-    <string name="percent">%1$d%%</string>
+    <string name="setup_error">¡Algo salió mal! ¡Vuelve a intentarlo!</string>
+    <string name="dialog_device_admin_text">¡Tenga en cuenta que debe desactivar los privilegios de administrador del dispositivo de la aplicación antes de desinstalarlo! Para asegurarse de que haya entendido esto, realice la siguiente operación:\n7 + 12</string>
+    <string name="dialog_device_admin_result">Resultado</string>
+    <string name="dialog_device_admin_error">Resultado incorrecto. Intentar otra vez.</string>
+    <string name="app_description">Aplicación de Android que agrega visualización de PEEK.</string>
     <string name="charged">%1$d%% cargado</string>
-
     <string name="shortcut_disabled">Desactivado</string>
-
-    <!-- Strings related to Settings -->
-    <string name="pref_int_failed">Este valor no puede ser usado</string>
-
-    <string name="pref_general">Ajustes generales</string>
-    <string name="pref_enabled">Actualmente activado</string>
-    <string name="pref_disabled">Actualmente desactivado</string>
-    <string name="pref_always_on">Always on display</string>
-    <string name="pref_charging">Cargando animación</string>
-
-    <string name="pref_look_and_feel">Look and feel</string>
-
-    <string name="pref_ao_watch_face">Esfera de reloj</string>
-    <string name="pref_ao_watch_face_summary">Ajustes relacionados con la esfera del reloj del AOD</string>
+    <string name="pref_int_failed">Este valor no se puede usar</string>
+    <string name="pref_general">Configuración general</string>
+    <string name="pref_enabled">Actualmente habilitado</string>
+    <string name="pref_disabled">Actualmente discapacitado</string>
+    <string name="pref_always_on">Visualización</string>
+    <string name="pref_charging">Animación de carga</string>
+    <string name="pref_look_and_feel">Mirar y sentir</string>
+    <string name="pref_ao_watch_face">Mirar la cara</string>
+    <string name="pref_ao_watch_face_summary">Configuración relacionada con la cara del reloj de la pantalla PEEK</string>
     <string name="pref_ao_background">Fondo</string>
-    <string name="pref_ao_background_summary">Ajustes relacionados con el fondo del AOD</string>
+    <string name="pref_ao_background_summary">Configuración relacionada con el fondo de la pantalla PEEK</string>
     <string name="pref_ao_behavior">Comportamiento</string>
-    <string name="pref_ao_behavior_summary">Ajustes relacionados con el comportamiento de la aplicación</string>
-    <string name="pref_ao_other">Otros ajustes</string>
-
-    <string name="pref_look_and_feel_hour">Utiliza el reloj de 12 horas</string>
-    <string name="pref_look_and_feel_hour_summary_on">Actualmente usado: Reloj de 12 horas</string>
-    <string name="pref_look_and_feel_hour_summary_off">Actualmente usado: Reloj de 24 horas</string>
-    <string name="pref_look_and_feel_am_pm">Mostrar AM / PM</string>
-    <string name="pref_look_and_feel_am_pm_summary">Muestra AM / PM cuando se usa el reloj de 12 horas</string>
-
-    <string name="pref_look_and_feel_ao">Siempre a la vista</string>
-    <string name="pref_look_and_feel_ao_summary">Cambia el aspecto de lo que siempre está en exhibición</string>
+    <string name="pref_ao_behavior_summary">Configuración relacionada con el comportamiento de la aplicación</string>
+    <string name="pref_ao_other">Otras configuraciones</string>
+    <string name="pref_look_and_feel_hour">Use reloj de 12 horas</string>
+    <string name="pref_look_and_feel_hour_summary_on">Actualmente utilizado: reloj de 12 horas</string>
+    <string name="pref_look_and_feel_hour_summary_off">Actualmente utilizado: reloj las 24 horas</string>
+    <string name="pref_look_and_feel_am_pm">Show AM / PM</string>
+    <string name="pref_look_and_feel_am_pm_summary">Mostrar AM / PM cuando usa un reloj de 12 horas</string>
+    <string name="pref_look_and_feel_ao">Mirada de visualización</string>
+    <string name="pref_look_and_feel_ao_summary">Cambia el aspecto de la pantalla de vista</string>
+    <string name="pref_look_and_feel_colors">Bandera</string>
+    <string name="pref_look_and_feel_colors_summary">Seleccione colores para ciertos elementos</string>
+    <string name="pref_look_and_feel_colors_clock">Color de reloj</string>
+    <string name="pref_look_and_feel_colors_date">Color de cita</string>
+    <string name="pref_look_and_feel_colors_battery">Color de la batería</string>
+    <string name="pref_look_and_feel_colors_music_controls">Música controla el color</string>
+    <string name="pref_look_and_feel_colors_calendar">Color del evento calendario</string>
+    <string name="pref_look_and_feel_colors_message">Color de mensaje</string>
+    <string name="pref_look_and_feel_colors_weather">Color climático</string>
+    <string name="pref_look_and_feel_colors_notification">Color de notificación</string>
+    <string name="pref_look_and_feel_colors_fingerprint">Color de icono de huella digital</string>
     <string name="pref_ao_showClock">Muestra la hora</string>
-    <string name="pref_ao_showDate">Muestra la fecha</string>
+    <string name="pref_ao_showDate">Mostrar la fecha</string>
     <string name="pref_ao_showBatteryIcn">Muestra un icono de batería</string>
     <string name="pref_ao_showBattery">Muestra el porcentaje de batería</string>
-    <string name="pref_ao_showNotifications">Muestra un recuento de notificaciones</string>
-    <string name="pref_ao_showNotificationIcons">Muestra los iconos de notificación</string>
-    <string name="pref_ao_edgeGlow">Resplandor del borde</string>
+    <string name="pref_ao_showMusicControls">Mostrar controles musicales</string>
+    <string name="pref_ao_showNotifications">Mostrar un recuento de notificaciones</string>
+    <string name="pref_ao_showNotificationIcons">Mostrar íconos de notificación</string>
+    <string name="pref_ao_fingerprint">Muestra un icono de huella digital</string>
+    <string name="pref_ao_fingerprint_margin">Margen de huella digital</string>
+    <string name="pref_ao_fingerprint_margin_summary">Espacio debajo del icono de huella digital</string>
+    <string name="pref_ao_edgeGlow">Brillo de borde</string>
     <string name="pref_ao_edgeGlow_summary">Bordes brillantes cuando se recibe una notificación</string>
-    <string name="pref_ao_glowDuration">Duración del brillo (en milisegundos)</string>
-    <string name="pref_ao_glowDuration_summary">Duración de los bordes cuando están brillando</string>
-    <string name="pref_ao_glowStyle">Estilo de brillo de borde</string>
+    <string name="pref_ao_glowDuration">Duración brillante (en milisegundos)</string>
+    <string name="pref_ao_glowDuration_summary">Duración Los bordes están brillando</string>
+    <string name="pref_ao_glowDelay">Retraso brillante (en milisegundos)</string>
+    <string name="pref_ao_glowDelay_summary">Intervalo entre los brillos</string>
+    <string name="pref_ao_glowStyle">Estilo de borde brillo</string>
     <string name="pref_ao_glowStyle_summary">Cambia el aspecto de los bordes brillantes</string>
-    <string name="pref_ao_vibration">Duración de la vibración (en milisegundos)</string>
-    <string name="pref_ao_vibration_summary">Duración el teléfono cuando vibra al tocar dos veces la pantalla</string>
-    <string name="pref_ao_animation_delay">Demora del movimiento (en minutos)</string>
-    <string name="pref_ao_animation_delay_summary">Tiempo entre las diferentes posiciones del contenido: ¡Los valores demasiado altos pueden causar quemaduras en la pantalla!</string>
-    <string name="pref_ao_force_brightness">Fuerza un cierto brillo en el AOD</string>
-    <string name="pref_ao_force_brightness_summary">Tap para cambiar el brillo forzado</string>
+    <string name="pref_ao_glowColor">Color brillo de borde</string>
+    <string name="pref_ao_glowColor_summary">Cambia el color de los bordes brillantes</string>
+    <string name="pref_ao_vibration">Duración de vibración (en milisegundos)</string>
+    <string name="pref_ao_vibration_summary">Duración El teléfono vibra cuando tocas dos veces la pantalla</string>
+    <string name="pref_ao_animation_delay">Retraso de movimiento (en minutos)</string>
+    <string name="pref_ao_animation_delay_summary">Tiempo entre las diferentes posiciones del contenido\nADVERTENCIA: ¡Los valores demasiado altos pueden causar quemaduras de pantalla!</string>
+    <string name="pref_ao_smooth_animation">Animate Motion</string>
+    <string name="pref_ao_smooth_animation_summary">Animar los cambios de posición</string>
+    <string name="pref_ao_force_brightness">Forzar un cierto brillo en la visualización</string>
+    <string name="pref_ao_force_brightness_summary">Toque para cambiar el brillo forzado</string>
     <string name="pref_ao_force_brightness_title">Brillo</string>
-    <string name="pref_ao_force_brightness_example">Así de brillante será el texto en modo always on display</string>
-    <string name="pref_ao_pocket_mode">Modo bolsillo</string>
-    <string name="pref_ao_pocket_mode_summary">Inhabilita el always on display en tu bolsillo: ¡El uso del sensor puede causar un aumento en el uso de la batería!</string>
-    <string name="pref_ao_dnd">Activar modo No molestar</string>
-    <string name="pref_ao_dnd_summary">Enciende el modo No molestar mientras el modo always on display está funcionando</string>
-    <string name="pref_ao_disable_on_dnd">Desactivar en modo No molestar</string>
-    <string name="pref_ao_disable_on_dnd_summary">Desactiva el always on display cuando el modo No molestar esté activo</string>
-    <string name="pref_ao_power_saving">Modo de ahorro de energía (root)</string>
-    <string name="pref_ao_power_saving_summary">Enciende el modo de ahorro de energía del sistema cuando la pantalla siempre está encendida.</string>
-    <string name="pref_ao_double_tap_disabled">Desactivar el doble toque</string>
-    <string name="pref_ao_double_tap_disabled_summary">Desactiva el doble toque para salir del AOD (no recomendado)</string>
-
-    <string name="pref_look_and_feel_charging">Mirada de animación de carga</string>
+    <string name="pref_ao_force_brightness_example">Así es como aparecerá el texto de su pantalla de vista.</string>
+    <string name="pref_ao_pocket_mode">Modo de bolsillo</string>
+    <string name="pref_ao_pocket_mode_summary">Desactiva la pantalla Pisek en su bolsillo\nADVERTENCIA: ¡El uso del sensor puede causar un mayor uso de la batería!</string>
+    <string name="pref_ao_dnd">Encender no molestar</string>
+    <string name="pref_ao_dnd_summary">Activado no molestar el modo mientras se ejecuta la pantalla de vista</string>
+    <string name="pref_ao_disable_on_dnd">Deshabilitar en modo no molestar</string>
+    <string name="pref_ao_disable_on_dnd_summary">Solo muestre cuándo no molestar el modo está inactivo</string>
+    <string name="pref_ao_power_saving">Modo de ahorro de energía (raíz)</string>
+    <string name="pref_ao_power_saving_summary">Enciende el modo de ahorro de potencia del sistema cuando la pantalla de vista está habilitada</string>
+    <string name="pref_ao_double_tap_speed">Velocidad de doble acceso</string>
+    <string name="pref_ao_double_tap_speed_summary">El tiempo que dos grifos pueden estar separados (en milisegundos)</string>
+    <string name="pref_ao_double_tap_disabled">Deshabilitar doble toque</string>
+    <string name="pref_ao_double_tap_disabled_summary">Desactiva la pantalla de doble toque para salir de vista (no recomendado)</string>
+    <string name="pref_ao_message">Mensaje</string>
+    <string name="pref_ao_message_summary">Un mensaje que se muestra en la pantalla Peek</string>
+    <string name="pref_ao_date_format">Formato de fecha</string>
+    <string name="pref_ao_date_format_summary">El formato de fecha utilizado en la pantalla de vista</string>
+    <string name="pref_ao_date_format_dialog_text">Tienes que seguir un patrón específico</string>
+    <string name="pref_ao_date_format_dialog_neutral">Obtenga más información</string>
+    <string name="pref_ao_date_format_illegal">Formato ilegal</string>
+    <string name="pref_ao_calendar">Mostrar eventos</string>
+    <string name="pref_ao_calendar_summary">Mostrar eventos en las próximas 24 h en su vistazo</string>
+    <string name="pref_look_and_feel_charging">Look de animación de carga</string>
     <string name="pref_look_and_feel_charging_summary">Cambia el aspecto de la animación de carga</string>
-
-    <string name="pref_look_and_feel_hide_display_cutouts">Ocultar los recortes de la pantalla</string>
-    <string name="pref_look_and_feel_hide_display_cutouts_summary">Ocultar recortes de pantalla en el contenido de la pantalla completa</string>
+    <string name="pref_ao_background_image">Imagen de fondo</string>
+    <string name="pref_ao_background_image_summary">Cambiar la imagen de fondo de la pantalla PEEK</string>
+    <string name="pref_look_and_feel_hide_display_cutouts">Ocultar recortes de pantalla</string>
+    <string name="pref_look_and_feel_hide_display_cutouts_summary">Ocultar recortes de visualización en contenido de pantalla completa</string>
     <string name="pref_look_and_feel_orientation">Orientación</string>
     <string name="pref_look_and_feel_orientation_summary">Cambia la orientación de la pantalla</string>
-    <string name="pref_look_and_feel_heads_up">Ocultar las notificaciones de la cabeza (root)</string>
-    <string name="pref_look_and_feel_heads_up_summary">Previene que las notificaciones de cabecera se muestren (experimental)</string>
-
-    <string name="pref_look_and_feel_filter_notifications">Filtro de notificaciones</string>
-    <string name="pref_look_and_feel_filter_notifications_summary">Elige, que las notificaciones no mostrar</string>
-    <string name="pref_look_and_feel_filter_notifications_explanation">Toque en las entradas para bloquearlas o desbloquearlas</string>
+    <string name="pref_look_and_feel_heads_up">Ocultar notificaciones (raíz)</string>
+    <string name="pref_look_and_feel_heads_up_summary">Evita que las notificaciones de la cabeza se muestren (experimental)</string>
+    <string name="pref_look_and_feel_weather">Clima</string>
+    <string name="pref_look_and_feel_weather_info">Mostrar información sobre el clima</string>
+    <string name="pref_look_and_feel_weather_info_summary">Configurar información meteorológica en su visualización de vista</string>
+    <string name="pref_look_and_feel_weather_show_summary">Mostrar información sobre el clima en su visualización</string>
+    <string name="pref_look_and_feel_weather_provider">Peek Display utiliza WTRR.in para datos meteorológicos. Obtener el clima puede transferir datos identificables.</string>
+    <string name="pref_look_and_feel_weather_location">Ubicación del clima</string>
+    <string name="pref_look_and_feel_weather_location_summary">La ubicación del informe meteorológico. Deje esto vacío para la ubicación automática.</string>
+    <string name="pref_look_and_feel_weather_format">Formato climático</string>
+    <string name="pref_look_and_feel_weather_format_summary">El formato meteorológico utilizado en la pantalla de vista</string>
+    <string name="pref_look_and_feel_filter_notifications">Notificaciones de filtro</string>
+    <string name="pref_look_and_feel_filter_notifications_summary">Elija, qué notificaciones no mostrar</string>
+    <string name="pref_look_and_feel_filter_notifications_explanation">Toque las entradas para bloquearlas o desbloquearlas</string>
     <string name="pref_look_and_feel_filter_notifications_blocked">Bloquear notificaciones de</string>
-    <string name="pref_look_and_feel_filter_notifications_shown">Notificaciones disponibles en</string>
+    <string name="pref_look_and_feel_filter_notifications_shown">Notificaciones disponibles de</string>
     <string name="pref_look_and_feel_filter_notifications_empty">No hay notificaciones disponibles</string>
     <string name="pref_look_and_feel_filter_notifications_empty_summary">Parece que no hay nada que mostrar</string>
     <string name="pref_look_and_feel_filter_notifications_unknown">Aplicación desconocida</string>
-
-    <string name="pref_look_and_feel_rules">Reglas</string>
-    <string name="pref_look_and_feel_rules_summary">Controla cuando mostrar el AOD</string>
+    <string name="pref_look_and_feel_tint_notifications">Notificaciones de tinte</string>
+    <string name="pref_look_and_feel_tint_notifications_summary">Notificaciones de tinte en los colores de sus aplicaciones</string>
+    <string name="pref_look_and_feel_display_size">Tamaño de pantalla</string>
+    <string name="pref_look_and_feel_display_size_summary">El tamaño de la pantalla de la pantalla de vista es %1$d%%</string>
+    <string name="pref_look_and_feel_rules">Normas</string>
+    <string name="pref_look_and_feel_rules_summary">Control cuándo mostrar visualización de vista</string>
     <string name="pref_look_and_feel_rules_charging_state">Estado de carga</string>
-    <string name="pref_look_and_feel_rules_battery_level">Nivel de la batería</string>
-    <string name="pref_look_and_feel_rules_battery_level_summary">Muestra sólo por encima de %1$d%%</string>
-    <string name="pref_look_and_feel_rules_battery_level_summary_zero">Muestra en cualquier nivel de la batería</string>
+    <string name="pref_look_and_feel_rules_charger">Tipo de carga</string>
+    <string name="pref_look_and_feel_rules_charger_summary">Elija qué tipos de carga cuentan como carga</string>
+    <string name="pref_look_and_feel_rules_battery_level">Nivel de batería</string>
+    <string name="pref_look_and_feel_rules_battery_level_summary">Mostrar solo arriba %1$d%%</string>
+    <string name="pref_look_and_feel_rules_battery_level_summary_zero">Mostrar a cualquier nivel de batería</string>
     <string name="pref_look_and_feel_rules_time">Período de tiempo</string>
-    <string name="pref_look_and_feel_rules_time_summary">Muestra de %1$s a %2$s</string>
-    <string name="pref_look_and_feel_rules_timeout">Sin tiempo</string>
-    <string name="pref_look_and_feel_rules_timeout_summary_zero">No se ha fijado ningún tiempo de espera</string>
-
+    <string name="pref_look_and_feel_rules_time_summary">Mostrar de %1$s a %2$s</string>
+    <string name="pref_look_and_feel_rules_timeout">Se acabó el tiempo</string>
+    <string name="pref_look_and_feel_rules_timeout_summary_zero">No se ha establecido un tiempo de espera</string>
+    <string name="pref_look_and_feel_rules_ambient_mode">Modo ambiente</string>
+    <string name="pref_look_and_feel_rules_ambient_mode_summary">Solo se recibió un espectáculo después de una notificación</string>
     <string name="pref_permissions">Permisos</string>
-    <string name="pref_permissions_summary">Ajustes relacionados con los permisos</string>
+    <string name="pref_permissions_summary">Configuración relacionada con permisos</string>
+    <string name="pref_ignore_battery_optimizations">Ignorar las optimizaciones de la batería</string>
+    <string name="pref_ignore_battery_optimizations_summary">Previene demoras causadas por el sistema</string>
     <string name="pref_notification">Acceso a la notificación</string>
-    <string name="pref_notification_summary">Activar o desactivar el acceso a la notificación</string>
+    <string name="pref_notification_summary">Habilitar o deshabilitar el acceso a la notificación</string>
     <string name="pref_draw_over_other_apps">Muestra sobre otras aplicaciones</string>
-    <string name="pref_draw_over_other_apps_summary">Activar o desactivar este permiso</string>
+    <string name="pref_draw_over_other_apps_summary">Habilitar o deshabilitar este permiso</string>
     <string name="pref_admin">Administrador del dispositivo</string>
-    <string name="pref_admin_summary">Activa este dispositivo admin para el modo normal\nPor favor, tenga en cuenta que tiene que desactivar los privilegios de administrador de la aplicación antes de desinstalarla!</string>
-    <string name="pref_root_mode">Modo root</string>
-
+    <string name="pref_admin_summary">Active este administrador del dispositivo para el modo normal\n¡Tenga en cuenta que debe desactivar los privilegios de administrador del dispositivo de la aplicación antes de desinstalarlo!</string>
+    <string name="pref_root_mode">Modo raíz</string>
+    <string name="pref_root_mode_summary">Habilita la funcionalidad raíz</string>
+    <string name="help_center">Centro de ayuda</string>
+    <string name="help_center_summary">Desinstalación, falta de respuesta, drenaje de la batería</string>
+    <string name="help_center_missing_permissions_text">Cuando una configuración está atenuada y le dice que habilite algo primero, aún no ha habilitado los permisos necesarios. Para otorgar permisos faltantes, abra la página de "Permisos" en la página principal y consentimiento para usar los permisos requeridos. Ahora puede habilitar la configuración que necesitan esos permisos.</string>
+    <string name="help_center_uninstall">Cómo desinstalar</string>
+    <string name="help_center_uninstall_text">El proceso de desinstalación puede fallar debido a una falla de diseño en el sistema operativo Android. Si el permiso de administrador del dispositivo no estaba deshabilitado antes de desinstalar el proceso fallará. Debe deshabilitar el permiso del administrador del dispositivo antes de desinstalar.</string>
+    <string name="help_center_uninstall_button">Desinstalar ahora</string>
+    <string name="help_center_delays">Cómo arreglar los retrasos</string>
+    <string name="help_center_delays_text">Algunos fabricantes prefieren la duración de la batería sobre la funcionalidad de la aplicación, por lo que esta aplicación solo puede funcionar con demoras o nada en algunos dispositivos. Si experimenta retrasos, intente deshabilitar las optimizaciones de la batería para la aplicación o verificar otras configuraciones específicas del fabricante.</string>
+    <string name="help_center_delays_button_one">Configuración de batería</string>
+    <string name="help_center_delays_button_two">Específico del fabricante</string>
+    <string name="help_center_battery_drain">Descubrir la fuente de drenaje de la batería</string>
+    <string name="help_center_battery_drain_text">Una razón para el drenaje de la batería podría ser que esté utilizando un teléfono con una pantalla LCD. Esta aplicación está diseñada para teléfonos con una pantalla OLED que puede apagar los píxeles negros para ahorrar energía. Las pantallas LCD no pueden apagar los píxeles negros, lo que dará como resultado la pantalla utilizando mucha más energía cuando la pantalla de vista está habilitada. Otra razón podría ser que otras aplicaciones se están ejecutando en segundo plano mientras se ejecuta la pantalla de vista. Android mostrará su consumo de batería como parte del consumo de batería de Peek Display.</string>
     <string name="loading">Cargando</string>
-
+    <string name="missing_permissions">Permisos faltantes</string>
+    <string name="permissions_notification_access">Activar el acceso a la notificación para esta función</string>
+    <string name="permissions_device_admin_or_root">Activar el administrador del dispositivo o root para esta característica</string>
     <string name="about">Acerca de</string>
     <string name="about_summary">Sobre la aplicación</string>
+    <string name="about_app_version">Versión de la aplicación</string>
+    <string name="about_privacy">Contenido externo</string>
+    <string name="about_privacy_desc">El contenido externo se cargará desde GitHub. Lea su política de privacidad para obtener más información.</string>
+    <string name="about_privacy_policy">política de privacidad</string>
+    <string name="about_contributors">Colaboradores</string>
+    <string name="about_contributors_desc">Una lista de los contribuyentes</string>
+    <string name="about_general">General</string>
+    <string name="about_github">Repositorio de Github</string>
+    <string name="about_license">Licencia</string>
+    <string name="about_icons">Íconos</string>
+    <string name="about_icons_desc">Iconos de Icons8 y Google</string>
+    <string name="about_libraries">Bibliotecas</string>
+    <string name="about_libraries_desc">Una lista de todas las bibliotecas usadas</string>
 
     <string-array name="pref_look_and_feel_rules_charging_state_display">
         <item>Mostrar en cualquier estado de carga</item>
-        <item>Mostrar sólo mientras se carga</item>
-        <item>Muestra sólo mientras se descarga</item>
+        <item>Mostrar solo mientras se cobra</item>
+        <item>Mostrar solo mientras descarga</item>
+    </string-array>
+
+    <string-array name="pref_look_and_feel_rules_charger_display">
+        <item>C.A.</item>
+        <item>USB</item>
+        <item>Inalámbrico</item>
     </string-array>
 
     <string-array name="pref_look_and_feel_orientation_display">
-        <item>Autobloquear</item>
+        <item>Bloqueo automático</item>
         <item>Retrato</item>
         <item>Paisaje</item>
     </string-array>
 
     <string-array name="pref_ao_glowStyle_display">
         <item>Todos los lados</item>
-        <item>Lateral izquierdo y derecho</item>
-        <item>Lateral arriba y abajo</item>
+        <item>Lados izquierdo y derecho</item>
+        <item>Lados superior e inferior</item>
     </string-array>
+
+    <string-array name="pref_ao_background_image_array_display">
+        <item>Ninguno</item>
+        <item>Daniel Olah</item>
+        <item>Daniel Olah</item>
+        <item>Daniel Olah</item>
+        <item>Daniel Olah</item>
+        <item>Daniel Olah</item>
+        <item>Daniel Olah</item>
+        <item>Daniel Olah</item>
+        <item>Daniel Olah</item>
+        <item>Filip Baotic</item>
+        <item>Tyler Lastovich</item>
+        <item>Tyler Lastovich</item>
+        <item>Tyler Lastovich</item>
+        <item>Costumbre</item>
+    </string-array>
+    <string name="notification_action_reply">Responder</string>
+    <string name="pref_ao_showAlbumArt">Exhibición del álbum</string>
+    <string name="pref_ao_interactive_notification_icons">Íconos de notificación interactiva</string>
+    <string name="pref_ao_interactive_notification_icons_summary">Icono de notificación de prensa larga para mostrar una vista previa y luego deslizar a la acción deseada para ejecutar</string>
+    <string name="pref_ao_invert_interaction_highlight">Invertir resaltado de interacción</string>
+    <string name="pref_ao_invert_interaction_highlight_summary">Cambios si los iconos de notificación se resaltan durante la interacción o en inactivo</string>
+    <string name="pref_ao_notification_icon_size">Tamaño del icono de notificación</string>
+    <string name="pref_ao_notification_icon_size_summary">Cambia el tamaño de los iconos de notificación</string>
+    <string name="pref_ao_notification_icon_top_padding">Notificación icono Top Rotding</string>
+    <string name="pref_ao_notification_icon_top_padding_summary">Ajuste los iconos de notificación de espacio por encima</string>
+    <string name="pref_ao_notification_preview_position">Posición de vista previa de notificación</string>
+    <string name="pref_ao_notification_preview_position_summary">Posición de la vista previa de notificación en relación con el icono de notificación</string>
+    <string name="pref_ao_top_padding">Relleno superior</string>
+    <string name="pref_ao_top_padding_summary">Ajuste la posición vertical de los elementos de visualización</string>
+    <string-array name="pref_ao_notification_preview_position_display">
+        <item>Arriba icono</item>
+        <item>Debajo del icono</item>
+    </string-array>
+    <string-array name="pref_ao_notification_icon_size_display">
+        <item>Pequeño</item>
+        <item>Estándar</item>
+        <item>Engrandecido</item>
+    </string-array>
+    <string name="pref_ao_fingerprint_interaction">Modo de interacción de huellas digitales</string>
+    <string name="pref_ao_fingerprint_interaction_summary">Cómo interactuar con el ícono de la huella digital</string>
+    <string name="pref_ao_fingerprint_interaction_swipe">Deslizar desde el icono</string>
+    <string name="pref_ao_fingerprint_interaction_longpress">Prensa larga</string>
+    <string name="pref_ao_swipe_notification_open">Deslizar para la notificación para abrirlo</string>
+    <string name="pref_ao_swipe_notification_open_summary">Permitir notificaciones de apertura deslizándoles el icono de huellas digitales</string>
+    <string name="notification_dismiss">Despedir</string>
+    <string name="pref_look_and_feel_rules_pickup_mode">Modo de recogida</string>
+    <string name="pref_look_and_feel_rules_pickup_mode_summary">Solo muestra al levantar el teléfono</string>
+    <string name="pref_pickup_sensitivity">Sensibilidad a la recogida</string>
+    <string name="pref_pickup_sensitivity_summary">Ajuste la sensibilidad de la detección de recogida</string>
+    <string-array name="pref_pickup_sensitivity_display">
+        <item>Alto</item>
+        <item>Medio</item>
+        <item>Bajo</item>
+    </string-array>
+    <string name="pref_ao_lock_icon">Usar icono de bloqueo</string>
+    <string name="pref_ao_lock_icon_summary">Reemplace el icono de huellas digitales con un icono de bloqueo</string>
+    <string name="donate">Donar</string>
+    <string name="donate_summary">Apoyar el desarrollo de la pantalla PEEK</string>
 </resources>

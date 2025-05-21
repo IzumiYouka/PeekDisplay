@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="device_admin_description">Permiteți afișajului PEEK să vă oprească ecranul</string>
+    <string name="notification_listener_description">Afișați notificări pe afișaj</string>
+    <string name="service_text">Afișajul Peek rulează în fundal</string>
+    <string name="service_channel">Canal de service</string>
+    <string name="setup_root_failed">Cererea rădăcină a eșuat! Vă rugăm să încercați din nou sau să schimbați modul!</string>
+    <string name="device_admin">Administrator dispozitiv</string>
+    <string name="device_admin_summary">Trebuie să activați acest admin de dispozitiv sau să treceți la modul root pentru ca această aplicație să funcționeze.</string>
+    <string name="notification_listener_service">Acces la notificare</string>
+    <string name="notification_listener_service_summary">Trebuie să activați accesul la notificare pentru aplicație pentru a afișa notificările pe afișajul PEEK.</string>
+    <string name="setup_draw_over_other_apps">Afișați alte aplicații</string>
+    <string name="setup_draw_over_other_apps_summary">Această permisiune este necesară pentru a afișa afișarea PEEK.</string>
+    <string name="setup_phone_state">Citiți starea telefonului</string>
+    <string name="setup_phone_state_summary">Această permisiune este necesară pentru a opri afișarea PEEK pentru apelurile primite.</string>
+    <string name="setup_calendar">Citiți calendarul</string>
+    <string name="setup_calendar_summary">Trebuie să activați accesul la calendar pentru aplicație pentru a afișa evenimentele pe afișajul PEEK.</string>
+    <string name="setup_skip">Salt</string>
+    <string name="setup_continue">Continua</string>
+    <string name="setup_error">Ceva nu a mers bine! Vă rugăm să încercați din nou!</string>
+    <string name="dialog_device_admin_text">Vă rugăm să rețineți că trebuie să dezactivați privilegiile de administrare a dispozitivului aplicației înainte de a -l dezinstala! Pentru a vă asigura că ați înțeles acest lucru, vă rugăm să efectuați următoarea operație:\n7 + 12</string>
+    <string name="dialog_device_admin_result">Rezultat</string>
+    <string name="dialog_device_admin_error">Rezultat greșit. Încearcă din nou.</string>
+    <string name="app_description">Aplicație Android care adaugă afișajul PEEK.</string>
+    <string name="charged">%1$d%% taxat</string>
+    <string name="shortcut_disabled">Dezactivat</string>
+    <string name="pref_int_failed">Această valoare nu poate fi utilizată</string>
+    <string name="pref_general">Setări generale</string>
+    <string name="pref_enabled">În prezent activat</string>
+    <string name="pref_disabled">În prezent dezactivat</string>
+    <string name="pref_always_on">Afișare peek</string>
+    <string name="pref_charging">Încărcare animație</string>
+    <string name="pref_look_and_feel">Uită -te și simți</string>
+    <string name="pref_ao_watch_face">Urmăriți fața</string>
+    <string name="pref_ao_watch_face_summary">Setări legate de fața ceasului de ceas peek</string>
+    <string name="pref_ao_background">Fundal</string>
+    <string name="pref_ao_background_summary">Setări legate de fundalul afișajului PEEK</string>
+    <string name="pref_ao_behavior">Comportament</string>
+    <string name="pref_ao_behavior_summary">Setări legate de comportamentul aplicației</string>
+    <string name="pref_ao_other">Alte setări</string>
+    <string name="pref_look_and_feel_hour">Folosiți ceas de 12 ore</string>
+    <string name="pref_look_and_feel_hour_summary_on">Utilizat în prezent: ceas de 12 ore</string>
+    <string name="pref_look_and_feel_hour_summary_off">Utilizat în prezent: ceas de 24 de ore</string>
+    <string name="pref_look_and_feel_am_pm">Arată AM / PM</string>
+    <string name="pref_look_and_feel_am_pm_summary">Afișați AM / PM când utilizați ceas de 12 ore</string>
+    <string name="pref_look_and_feel_ao">Aspect de afișare peek</string>
+    <string name="pref_look_and_feel_ao_summary">Schimbă aspectul afișajului Peek</string>
+    <string name="pref_look_and_feel_colors">Culori</string>
+    <string name="pref_look_and_feel_colors_summary">Selectați culori pentru anumite elemente</string>
+    <string name="pref_look_and_feel_colors_clock">Culoarea ceasului</string>
+    <string name="pref_look_and_feel_colors_date">Culoarea datei</string>
+    <string name="pref_look_and_feel_colors_battery">Culoarea bateriei</string>
+    <string name="pref_look_and_feel_colors_music_controls">Muzica controlează culoarea</string>
+    <string name="pref_look_and_feel_colors_calendar">Culoarea evenimentului din calendar</string>
+    <string name="pref_look_and_feel_colors_message">Culoarea mesajului</string>
+    <string name="pref_look_and_feel_colors_weather">Culoarea vremii</string>
+    <string name="pref_look_and_feel_colors_notification">Culoarea notificării</string>
+    <string name="pref_look_and_feel_colors_fingerprint">Culoarea pictogramei amprentei</string>
+    <string name="pref_ao_showClock">Afișați timpul</string>
+    <string name="pref_ao_showDate">Afișați data</string>
+    <string name="pref_ao_showBatteryIcn">Afișați o pictogramă a bateriei</string>
+    <string name="pref_ao_showBattery">Afișați procentul bateriei</string>
+    <string name="pref_ao_showMusicControls">Afișează controale de muzică</string>
+    <string name="pref_ao_showNotifications">Afișați un număr de notificări</string>
+    <string name="pref_ao_showNotificationIcons">Afișează pictograme de notificare</string>
+    <string name="pref_ao_fingerprint">Afișați o pictogramă de amprentă</string>
+    <string name="pref_ao_fingerprint_margin">Marjă de amprentă</string>
+    <string name="pref_ao_fingerprint_margin_summary">Spațiu sub pictograma amprentei</string>
+    <string name="pref_ao_edgeGlow">GLOW EDGE</string>
+    <string name="pref_ao_edgeGlow_summary">Margini strălucitoare atunci când se primește o notificare</string>
+    <string name="pref_ao_glowDuration">Durata strălucitoare (în milisecunde)</string>
+    <string name="pref_ao_glowDuration_summary">Durata marginilor sunt strălucitoare</string>
+    <string name="pref_ao_glowDelay">Întârziere strălucitoare (în milisecunde)</string>
+    <string name="pref_ao_glowDelay_summary">Interval între strălucire</string>
+    <string name="pref_ao_glowStyle">Edge Glow Stil</string>
+    <string name="pref_ao_glowStyle_summary">Schimbă aspectul marginilor strălucitoare</string>
+    <string name="pref_ao_glowColor">Culoarea strălucitoare a marginilor</string>
+    <string name="pref_ao_glowColor_summary">Schimbă culoarea marginilor strălucitoare</string>
+    <string name="pref_ao_vibration">Durata vibrațiilor (în milisecunde)</string>
+    <string name="pref_ao_vibration_summary">Durata telefonul vibrează atunci când atingeți dublu ecranul</string>
+    <string name="pref_ao_animation_delay">Întârziere de mișcare (în câteva minute)</string>
+    <string name="pref_ao_animation_delay_summary">Timp între diferitele poziții ale conținutului\nAVERTIZARE: Valorile prea mari pot provoca arsuri pe ecran!</string>
+    <string name="pref_ao_smooth_animation">Animarea mișcării</string>
+    <string name="pref_ao_smooth_animation_summary">Animați schimbările de poziție</string>
+    <string name="pref_ao_force_brightness">Forțați o anumită luminozitate pe afișajul peek</string>
+    <string name="pref_ao_force_brightness_summary">Atingeți pentru a schimba luminozitatea forțată</string>
+    <string name="pref_ao_force_brightness_title">Luminozitate</string>
+    <string name="pref_ao_force_brightness_example">Acesta este cât de luminos va apărea textul de pe afișajul dvs. PEEK.</string>
+    <string name="pref_ao_pocket_mode">Mod de buzunar</string>
+    <string name="pref_ao_pocket_mode_summary">Dezactivează afișarea peek în buzunar\nAVERTIZARE: Utilizarea senzorului poate provoca consumul crescut de baterie!</string>
+    <string name="pref_ao_dnd">Porniți nu deranjați</string>
+    <string name="pref_ao_dnd_summary">Porniți nu deranjați modul în timp ce se desfășoară afișarea peek</string>
+    <string name="pref_ao_disable_on_dnd">Dezactivați în modul nu deranjați</string>
+    <string name="pref_ao_disable_on_dnd_summary">Afișați doar când nu deranjați modul este inactiv</string>
+    <string name="pref_ao_power_saving">Mod de economisire a puterii (rădăcină)</string>
+    <string name="pref_ao_power_saving_summary">Pornește modul de economisire a puterii sistemului atunci când este activat afișarea peek</string>
+    <string name="pref_ao_double_tap_speed">Viteză dublă</string>
+    <string name="pref_ao_double_tap_speed_summary">Timpul două robinete pot fi separate (în milisecunde)</string>
+    <string name="pref_ao_double_tap_disabled">Dezactivați dublu-tap</string>
+    <string name="pref_ao_double_tap_disabled_summary">Dezactivează dublu-tapet pentru a ieși pe afișaj PEEK (nu este recomandat)</string>
+    <string name="pref_ao_message">Mesaj</string>
+    <string name="pref_ao_message_summary">Un mesaj afișat pe afișajul Peek</string>
+    <string name="pref_ao_date_format">Formatul datei</string>
+    <string name="pref_ao_date_format_summary">Formatul datei utilizat pe afișajul Peek</string>
+    <string name="pref_ao_date_format_dialog_text">Trebuie să urmați un model specific</string>
+    <string name="pref_ao_date_format_dialog_neutral">Află mai multe</string>
+    <string name="pref_ao_date_format_illegal">Format ilegal</string>
+    <string name="pref_ao_calendar">Arată evenimente</string>
+    <string name="pref_ao_calendar_summary">Afișați evenimentele în următoarele 24 de ore pe afișajul dvs. Peek</string>
+    <string name="pref_look_and_feel_charging">Încărcarea aspectului de animație</string>
+    <string name="pref_look_and_feel_charging_summary">Schimbă aspectul animației de încărcare</string>
+    <string name="pref_ao_background_image">Imagine de fundal</string>
+    <string name="pref_ao_background_image_summary">Schimbați imaginea de fundal a afișajului Peek</string>
+    <string name="pref_look_and_feel_hide_display_cutouts">Ascundeți decupajele de afișare</string>
+    <string name="pref_look_and_feel_hide_display_cutouts_summary">Ascundeți decupajele de afișare pe conținut de ecran complet</string>
+    <string name="pref_look_and_feel_orientation">Orientare</string>
+    <string name="pref_look_and_feel_orientation_summary">Modifică orientarea afișajului</string>
+    <string name="pref_look_and_feel_heads_up">Ascunde notificări capete (rădăcină)</string>
+    <string name="pref_look_and_feel_heads_up_summary">Împiedică să se prezinte notificările (experimentale)</string>
+    <string name="pref_look_and_feel_weather">Vreme</string>
+    <string name="pref_look_and_feel_weather_info">Afișați informații despre vreme</string>
+    <string name="pref_look_and_feel_weather_info_summary">Configurați informațiile meteo pe afișajul dvs. PEEK</string>
+    <string name="pref_look_and_feel_weather_show_summary">Afișați informații meteorologice pe afișajul dvs. Peek</string>
+    <string name="pref_look_and_feel_weather_provider">PEEK Afișaj folosește WTRR.in pentru date meteorologice. Preluarea vremii poate transfera date identificabile.</string>
+    <string name="pref_look_and_feel_weather_location">Locația vremii</string>
+    <string name="pref_look_and_feel_weather_location_summary">Locația pentru raportul meteo. Lăsați acest lucru gol pentru locație automată.</string>
+    <string name="pref_look_and_feel_weather_format">Format meteo</string>
+    <string name="pref_look_and_feel_weather_format_summary">Formatul meteo folosit pe afișajul Peek</string>
+    <string name="pref_look_and_feel_filter_notifications">Notificări de filtrare</string>
+    <string name="pref_look_and_feel_filter_notifications_summary">Alegeți, care notificări nu trebuie să arate</string>
+    <string name="pref_look_and_feel_filter_notifications_explanation">Atingeți intrările pentru a le bloca sau debloca</string>
+    <string name="pref_look_and_feel_filter_notifications_blocked">Blocați notificările de la</string>
+    <string name="pref_look_and_feel_filter_notifications_shown">Notificări disponibile de la</string>
+    <string name="pref_look_and_feel_filter_notifications_empty">Nu există notificări disponibile</string>
+    <string name="pref_look_and_feel_filter_notifications_empty_summary">Se pare că nu este nimic de arătat</string>
+    <string name="pref_look_and_feel_filter_notifications_unknown">Cerere necunoscută</string>
+    <string name="pref_look_and_feel_tint_notifications">Notificări de nuanță</string>
+    <string name="pref_look_and_feel_tint_notifications_summary">Notificări de nuanțe în culorile aplicației lor</string>
+    <string name="pref_look_and_feel_display_size">Dimensiunea afișajului</string>
+    <string name="pref_look_and_feel_display_size_summary">Dimensiunea afișajului afișajului Peek este %1$d%%</string>
+    <string name="pref_look_and_feel_rules">Reguli</string>
+    <string name="pref_look_and_feel_rules_summary">Control când se afișează afișarea peek</string>
+    <string name="pref_look_and_feel_rules_charging_state">Stat de încărcare</string>
+    <string name="pref_look_and_feel_rules_charger">Tip de încărcare</string>
+    <string name="pref_look_and_feel_rules_charger_summary">Alegeți ce tipuri de încărcare contează ca încărcare</string>
+    <string name="pref_look_and_feel_rules_battery_level">Nivelul bateriei</string>
+    <string name="pref_look_and_feel_rules_battery_level_summary">Arată doar mai sus %1$d%%</string>
+    <string name="pref_look_and_feel_rules_battery_level_summary_zero">Afișați la orice nivel de baterie</string>
+    <string name="pref_look_and_feel_rules_time">Perioada de timp</string>
+    <string name="pref_look_and_feel_rules_time_summary">Arată din %1$s la %2$s</string>
+    <string name="pref_look_and_feel_rules_timeout">Pauză</string>
+    <string name="pref_look_and_feel_rules_timeout_summary_zero">Nu a fost stabilit un interval de timp</string>
+    <string name="pref_look_and_feel_rules_ambient_mode">Modul ambiant</string>
+    <string name="pref_look_and_feel_rules_ambient_mode_summary">Afișați numai după ce a fost primită o notificare</string>
+    <string name="pref_permissions">Permisiuni</string>
+    <string name="pref_permissions_summary">Setări legate de permisiuni</string>
+    <string name="pref_ignore_battery_optimizations">Ignorați optimizările bateriei</string>
+    <string name="pref_ignore_battery_optimizations_summary">Previne întârzierile cauzate de sistem</string>
+    <string name="pref_notification">Acces la notificare</string>
+    <string name="pref_notification_summary">Activați sau dezactivați accesul la notificare</string>
+    <string name="pref_draw_over_other_apps">Afișați alte aplicații</string>
+    <string name="pref_draw_over_other_apps_summary">Activați sau dezactivați această permisiune</string>
+    <string name="pref_admin">Administrator dispozitiv</string>
+    <string name="pref_admin_summary">Activați acest dispozitiv admin pentru modul normal\nVă rugăm să rețineți că trebuie să dezactivați privilegiile de administrare a dispozitivului aplicației înainte de a -l dezinstala!</string>
+    <string name="pref_root_mode">Modul rădăcină</string>
+    <string name="pref_root_mode_summary">Permite funcționalitatea rădăcinii</string>
+    <string name="help_center">Centrul de ajutor</string>
+    <string name="help_center_summary">Dezinstalarea, nerespectarea, scurgerea bateriei</string>
+    <string name="help_center_missing_permissions_text">Când o setare este gri și vă spune să activați ceva mai întâi, nu ați activat încă permisiunile necesare. Pentru a acorda permisiunile lipsă, deschideți pagina „Permisiuni” pe pagina principală și consimțiți să utilizați permisiunile necesare. Acum puteți activa setările care au nevoie de aceste permisiuni.</string>
+    <string name="help_center_uninstall">Cum să dezinstalați</string>
+    <string name="help_center_uninstall_text">Procesul de dezinstalare poate eșua din cauza unui defect de proiectare în sistemul de operare Android. Dacă permisiunea de administrare a dispozitivului nu a fost dezactivată înainte de dezinstalarea procesului va eșua. Trebuie să dezactivați permisiunea de administrare a dispozitivului înainte de dezinstalare.</string>
+    <string name="help_center_uninstall_button">Dezinstalați acum</string>
+    <string name="help_center_delays">Cum să remediați întârzierile</string>
+    <string name="help_center_delays_text">Unii producători preferă durata de viață a bateriei decât funcționalitatea aplicației, motiv pentru care această aplicație poate funcționa doar cu întârzieri sau nu deloc pe unele dispozitive. Dacă întâmpinați întârzieri, încercați să dezactivați optimizările bateriei pentru aplicație sau verificați alte setări specifice producătorului.</string>
+    <string name="help_center_delays_button_one">Setări baterie</string>
+    <string name="help_center_delays_button_two">Producător specific</string>
+    <string name="help_center_battery_drain">Având în vedere sursa de scurgere a bateriei</string>
+    <string name="help_center_battery_drain_text">Un motiv pentru scurgerea bateriei ar putea fi faptul că utilizați un telefon cu un ecran LCD. Această aplicație este proiectată pentru telefoane cu un ecran OLED care poate opri pixelii negri pentru a economisi energie. Afișajele LCD nu pot opri pixelii negri, ceea ce va avea ca rezultat afișajul folosind mult mai multă energie atunci când afișarea PEEK este activată. Un alt motiv ar putea fi ca alte aplicații să funcționeze în fundal în timp ce afișarea PEEK funcționează. Android își va afișa consumul de baterii ca parte a consumului de baterii Peek Display.</string>
+    <string name="loading">Încărcare</string>
+    <string name="missing_permissions">Permisiuni lipsă</string>
+    <string name="permissions_notification_access">Porniți accesul la notificare pentru această caracteristică</string>
+    <string name="permissions_device_admin_or_root">Porniți admin dispozitiv sau rădăcină pentru această caracteristică</string>
+    <string name="about">Despre</string>
+    <string name="about_summary">Despre aplicație</string>
+    <string name="about_app_version">Versiunea aplicației</string>
+    <string name="about_privacy">Conținut extern</string>
+    <string name="about_privacy_desc">Conținutul extern va fi încărcat de la GitHub. Citiți politica lor de confidențialitate pentru informații suplimentare.</string>
+    <string name="about_privacy_policy">Politica de confidențialitate</string>
+    <string name="about_contributors">Contribuitori</string>
+    <string name="about_contributors_desc">O listă a contribuabililor</string>
+    <string name="about_general">General</string>
+    <string name="about_github">Depozit GitHub</string>
+    <string name="about_license">Licenţă</string>
+    <string name="about_icons">Icoane</string>
+    <string name="about_icons_desc">Icoane de Icoane8 și Google</string>
+    <string name="about_libraries">Biblioteci</string>
+    <string name="about_libraries_desc">O listă cu toate bibliotecile folosite</string>
+
+    <string-array name="pref_look_and_feel_rules_charging_state_display">
+        <item>Afișați la orice stat de încărcare</item>
+        <item>Arată doar în timpul încărcării</item>
+        <item>Arată doar în timp ce descărcați</item>
+    </string-array>
+
+    <string-array name="pref_look_and_feel_rules_charger_display">
+        <item>AC</item>
+        <item>USB</item>
+        <item>Fără fir</item>
+    </string-array>
+
+    <string-array name="pref_look_and_feel_orientation_display">
+        <item>Auto-blocare</item>
+        <item>Portret</item>
+        <item>Peisaj</item>
+    </string-array>
+
+    <string-array name="pref_ao_glowStyle_display">
+        <item>Toate părțile</item>
+        <item>Laturile stângi și drepte</item>
+        <item>Laturi de sus și de jos</item>
+    </string-array>
+
+    <string-array name="pref_ao_background_image_array_display">
+        <item>Nici unul</item>
+        <item>Daniel Olah</item>
+        <item>Daniel Olah</item>
+        <item>Daniel Olah</item>
+        <item>Daniel Olah</item>
+        <item>Daniel Olah</item>
+        <item>Daniel Olah</item>
+        <item>Daniel Olah</item>
+        <item>Daniel Olah</item>
+        <item>Filip Baotic</item>
+        <item>Tyler Lastovich</item>
+        <item>Tyler Lastovich</item>
+        <item>Tyler Lastovich</item>
+        <item>Obicei</item>
+    </string-array>
+    <string name="notification_action_reply">Răspunde</string>
+    <string name="pref_ao_showAlbumArt">Afișează arta albumului</string>
+    <string name="pref_ao_interactive_notification_icons">Pictograme interactive de notificare</string>
+    <string name="pref_ao_interactive_notification_icons_summary">Apăsați lung pe pictograma de notificare pentru a afișa previzualizarea și apoi glisați la acțiunea dorită pentru a executa</string>
+    <string name="pref_ao_invert_interaction_highlight">Evidențierea interacțiunii inversă</string>
+    <string name="pref_ao_invert_interaction_highlight_summary">Modificări dacă pictogramele de notificare sunt evidențiate în timpul interacțiunii sau în ralanti</string>
+    <string name="pref_ao_notification_icon_size">Dimensiunea pictogramei de notificare</string>
+    <string name="pref_ao_notification_icon_size_summary">Modifică dimensiunea pictogramelor de notificare</string>
+    <string name="pref_ao_notification_icon_top_padding">Pictograma notificării Pidunul de top</string>
+    <string name="pref_ao_notification_icon_top_padding_summary">Reglați spațiul de mai sus pictogramele de notificare</string>
+    <string name="pref_ao_notification_preview_position">Poziția de previzualizare a notificării</string>
+    <string name="pref_ao_notification_preview_position_summary">Poziția previzualizării notificării în raport cu pictograma notificării</string>
+    <string name="pref_ao_top_padding">Hidding top</string>
+    <string name="pref_ao_top_padding_summary">Reglați poziția verticală a elementelor de afișare</string>
+    <string-array name="pref_ao_notification_preview_position_display">
+        <item>Deasupra pictogramei</item>
+        <item>Sub pictogramă</item>
+    </string-array>
+    <string-array name="pref_ao_notification_icon_size_display">
+        <item>Mic</item>
+        <item>Standard</item>
+        <item>Lărgit</item>
+    </string-array>
+    <string name="pref_ao_fingerprint_interaction">Mod de interacțiune privind amprenta digitală</string>
+    <string name="pref_ao_fingerprint_interaction_summary">Cum să interacționați cu pictograma amprentei digitale</string>
+    <string name="pref_ao_fingerprint_interaction_swipe">Glisați din pictogramă</string>
+    <string name="pref_ao_fingerprint_interaction_longpress">Presă lungă</string>
+    <string name="pref_ao_swipe_notification_open">Glisați la notificare pentru a -l deschide</string>
+    <string name="pref_ao_swipe_notification_open_summary">Permiteți notificările de deschidere, trecând la ele din pictograma amprentei digitale</string>
+    <string name="notification_dismiss">Respinge</string>
+    <string name="pref_look_and_feel_rules_pickup_mode">Mod de preluare</string>
+    <string name="pref_look_and_feel_rules_pickup_mode_summary">Afișați doar atunci când ridicați telefonul</string>
+    <string name="pref_pickup_sensitivity">Sensibilitate la preluare</string>
+    <string name="pref_pickup_sensitivity_summary">Reglați sensibilitatea detectării preluării</string>
+    <string-array name="pref_pickup_sensitivity_display">
+        <item>Ridicat</item>
+        <item>Mediu</item>
+        <item>Scăzut</item>
+    </string-array>
+    <string name="pref_ao_lock_icon">Utilizați pictograma de blocare</string>
+    <string name="pref_ao_lock_icon_summary">Înlocuiți pictograma de amprentă cu o pictogramă de blocare</string>
+    <string name="donate">Dona</string>
+    <string name="donate_summary">Susțineți dezvoltarea afișajului PEEK</string>
+</resources>

@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="device_admin_description">Izinkan Tampilan Peek untuk mematikan layar Anda</string>
+    <string name="notification_listener_description">Tampilkan pemberitahuan di layar</string>
+    <string name="service_text">Tampilan Peek berjalan di latar belakang</string>
+    <string name="service_channel">Saluran layanan</string>
+    <string name="setup_root_failed">Permintaan root gagal! Silakan coba lagi atau beralih mode!</string>
+    <string name="device_admin">Admin perangkat</string>
+    <string name="device_admin_summary">Anda perlu mengaktifkan admin perangkat ini atau beralih ke mode root agar aplikasi ini berfungsi.</string>
+    <string name="notification_listener_service">Akses pemberitahuan</string>
+    <string name="notification_listener_service_summary">Anda perlu mengaktifkan akses pemberitahuan untuk aplikasi untuk menampilkan pemberitahuan Anda pada tampilan Peek.</string>
+    <string name="setup_draw_over_other_apps">Tampilkan aplikasi lain</string>
+    <string name="setup_draw_over_other_apps_summary">Izin ini diperlukan untuk menampilkan tampilan mengintip.</string>
+    <string name="setup_phone_state">Baca Status Telepon</string>
+    <string name="setup_phone_state_summary">Izin ini diperlukan untuk menghentikan tampilan mengintip untuk panggilan masuk.</string>
+    <string name="setup_calendar">Baca Kalender</string>
+    <string name="setup_calendar_summary">Anda perlu mengaktifkan akses kalender untuk aplikasi untuk menampilkan acara Anda pada tampilan mengintip.</string>
+    <string name="setup_skip">Melewati</string>
+    <string name="setup_continue">Melanjutkan</string>
+    <string name="setup_error">Ada yang salah! Tolong coba lagi!</string>
+    <string name="dialog_device_admin_text">Harap dicatat bahwa Anda harus menonaktifkan hak admin perangkat aplikasi sebelum menghapus pemasangannya! Untuk memastikan Anda mengerti ini, silakan lakukan operasi berikut:\n7 + 12</string>
+    <string name="dialog_device_admin_result">Hasil</string>
+    <string name="dialog_device_admin_error">Hasil yang salah. Coba lagi.</string>
+    <string name="app_description">Aplikasi Android yang menambahkan tampilan mengintip.</string>
+    <string name="charged">%1$d%% Dibebankan</string>
+    <string name="shortcut_disabled">Dengan disabilitas</string>
+    <string name="pref_int_failed">Nilai ini tidak dapat digunakan</string>
+    <string name="pref_general">Pengaturan Umum</string>
+    <string name="pref_enabled">Saat ini diaktifkan</string>
+    <string name="pref_disabled">Saat ini dinonaktifkan</string>
+    <string name="pref_always_on">Tampilan mengintip</string>
+    <string name="pref_charging">Pengisian Animasi</string>
+    <string name="pref_look_and_feel">Lihat dan rasakan</string>
+    <string name="pref_ao_watch_face">Tonton wajah</string>
+    <string name="pref_ao_watch_face_summary">Pengaturan yang terkait dengan Watch Face of Peek Display</string>
+    <string name="pref_ao_background">Latar belakang</string>
+    <string name="pref_ao_background_summary">Pengaturan yang terkait dengan latar belakang tampilan Peek</string>
+    <string name="pref_ao_behavior">Perilaku</string>
+    <string name="pref_ao_behavior_summary">Pengaturan yang terkait dengan perilaku aplikasi</string>
+    <string name="pref_ao_other">Pengaturan lainnya</string>
+    <string name="pref_look_and_feel_hour">Gunakan jam 12 jam</string>
+    <string name="pref_look_and_feel_hour_summary_on">Saat ini digunakan: jam 12 jam</string>
+    <string name="pref_look_and_feel_hour_summary_off">Saat ini digunakan: jam 24 jam</string>
+    <string name="pref_look_and_feel_am_pm">Tunjukkan AM / PM</string>
+    <string name="pref_look_and_feel_am_pm_summary">Tampilkan AM / PM saat menggunakan jam 12 jam</string>
+    <string name="pref_look_and_feel_ao">Tampilan tampilan mengintip</string>
+    <string name="pref_look_and_feel_ao_summary">Mengubah tampilan tampilan mengintip</string>
+    <string name="pref_look_and_feel_colors">Warna</string>
+    <string name="pref_look_and_feel_colors_summary">Pilih warna untuk elemen tertentu</string>
+    <string name="pref_look_and_feel_colors_clock">Warna jam</string>
+    <string name="pref_look_and_feel_colors_date">Warna tanggal</string>
+    <string name="pref_look_and_feel_colors_battery">Warna baterai</string>
+    <string name="pref_look_and_feel_colors_music_controls">Warna Kontrol Musik</string>
+    <string name="pref_look_and_feel_colors_calendar">Warna Acara Kalender</string>
+    <string name="pref_look_and_feel_colors_message">Warna pesan</string>
+    <string name="pref_look_and_feel_colors_weather">Warna cuaca</string>
+    <string name="pref_look_and_feel_colors_notification">Warna pemberitahuan</string>
+    <string name="pref_look_and_feel_colors_fingerprint">Warna ikon sidik jari</string>
+    <string name="pref_ao_showClock">Tampilkan waktu</string>
+    <string name="pref_ao_showDate">Tampilkan tanggal</string>
+    <string name="pref_ao_showBatteryIcn">Tampilkan ikon baterai</string>
+    <string name="pref_ao_showBattery">Tampilkan persentase baterai</string>
+    <string name="pref_ao_showMusicControls">Tampilkan kontrol musik</string>
+    <string name="pref_ao_showNotifications">Tampilkan Hitungan Pemberitahuan</string>
+    <string name="pref_ao_showNotificationIcons">Tampilkan ikon pemberitahuan</string>
+    <string name="pref_ao_fingerprint">Tampilkan ikon sidik jari</string>
+    <string name="pref_ao_fingerprint_margin">Margin sidik jari</string>
+    <string name="pref_ao_fingerprint_margin_summary">Ruang di bawah ikon sidik jari</string>
+    <string name="pref_ao_edgeGlow">Tepi cahaya</string>
+    <string name="pref_ao_edgeGlow_summary">Tepi bersinar saat pemberitahuan diterima</string>
+    <string name="pref_ao_glowDuration">Durasi bersinar (dalam milidetik)</string>
+    <string name="pref_ao_glowDuration_summary">Durasi tepi bersinar</string>
+    <string name="pref_ao_glowDelay">Penundaan yang bersinar (dalam milidetik)</string>
+    <string name="pref_ao_glowDelay_summary">Interval antara cahaya</string>
+    <string name="pref_ao_glowStyle">Gaya cahaya tepi</string>
+    <string name="pref_ao_glowStyle_summary">Mengubah tampilan tepi yang bersinar</string>
+    <string name="pref_ao_glowColor">Warna Glow Tepi</string>
+    <string name="pref_ao_glowColor_summary">Mengubah warna tepi yang bersinar</string>
+    <string name="pref_ao_vibration">Durasi getaran (dalam milidetik)</string>
+    <string name="pref_ao_vibration_summary">Durasi telepon bergetar saat Anda mengetuk layar ganda</string>
+    <string name="pref_ao_animation_delay">Penundaan gerakan (dalam hitungan menit)</string>
+    <string name="pref_ao_animation_delay_summary">Waktu antara berbagai posisi konten\nPeringatan: Nilai yang terlalu tinggi dapat menyebabkan luka bakar layar!</string>
+    <string name="pref_ao_smooth_animation">Gerakan hidup</string>
+    <string name="pref_ao_smooth_animation_summary">Menghidupkan perubahan posisi</string>
+    <string name="pref_ao_force_brightness">Memaksa kecerahan tertentu pada tampilan mengintip</string>
+    <string name="pref_ao_force_brightness_summary">Ketuk untuk mengubah kecerahan paksa</string>
+    <string name="pref_ao_force_brightness_title">Kecerahan</string>
+    <string name="pref_ao_force_brightness_example">Ini adalah seberapa terang teks pada tampilan mengintip Anda akan muncul.</string>
+    <string name="pref_ao_pocket_mode">Mode saku</string>
+    <string name="pref_ao_pocket_mode_summary">Menonaktifkan tampilan mengintip di saku Anda\nPERINGATAN: Penggunaan sensor dapat menyebabkan peningkatan penggunaan baterai!</string>
+    <string name="pref_ao_dnd">Nyalakan jangan ganggu</string>
+    <string name="pref_ao_dnd_summary">Nyalakan Mode Jangan Ganggu Saat Tampilan Mengintip Berjalan</string>
+    <string name="pref_ao_disable_on_dnd">Nonaktifkan dalam mode jangan ganggu</string>
+    <string name="pref_ao_disable_on_dnd_summary">Tunjukkan hanya ketika tidak mengganggu mode tidak aktif</string>
+    <string name="pref_ao_power_saving">Mode penghematan daya (root)</string>
+    <string name="pref_ao_power_saving_summary">Menyalakan mode penghemat daya \\ saat tampilan mengintip diaktifkan</string>
+    <string name="pref_ao_double_tap_speed">Kecepatan ketuk ganda</string>
+    <string name="pref_ao_double_tap_speed_summary">Waktu dua keran bisa terpisah (dalam milidetik)</string>
+    <string name="pref_ao_double_tap_disabled">Nonaktifkan ketuk ganda</string>
+    <string name="pref_ao_double_tap_disabled_summary">Menonaktifkan double-tap untuk keluar dari tampilan mengintip (tidak disarankan)</string>
+    <string name="pref_ao_message">Pesan</string>
+    <string name="pref_ao_message_summary">Pesan yang ditampilkan di Tampilan Peek</string>
+    <string name="pref_ao_date_format">Format tanggal</string>
+    <string name="pref_ao_date_format_summary">Format tanggal yang digunakan pada tampilan mengintip</string>
+    <string name="pref_ao_date_format_dialog_text">Anda harus mengikuti pola tertentu</string>
+    <string name="pref_ao_date_format_dialog_neutral">Pelajari lebih lanjut</string>
+    <string name="pref_ao_date_format_illegal">Format ilegal</string>
+    <string name="pref_ao_calendar">Tampilkan acara</string>
+    <string name="pref_ao_calendar_summary">Tampilkan acara dalam 24 jam ke depan pada tampilan Peek Anda</string>
+    <string name="pref_look_and_feel_charging">Menagih penampilan animasi</string>
+    <string name="pref_look_and_feel_charging_summary">Mengubah tampilan animasi pengisian</string>
+    <string name="pref_ao_background_image">Gambar latar belakang</string>
+    <string name="pref_ao_background_image_summary">Ubah gambar latar belakang tampilan Peek</string>
+    <string name="pref_look_and_feel_hide_display_cutouts">Sembunyikan guntingan tampilan</string>
+    <string name="pref_look_and_feel_hide_display_cutouts_summary">Sembunyikan guntingan tampilan pada konten layar penuh</string>
+    <string name="pref_look_and_feel_orientation">Orientasi</string>
+    <string name="pref_look_and_feel_orientation_summary">Mengubah orientasi tampilan</string>
+    <string name="pref_look_and_feel_heads_up">Sembunyikan Pemberitahuan Kepala (Root)</string>
+    <string name="pref_look_and_feel_heads_up_summary">Mencegah pemberitahuan kepala dari menunjukkan (eksperimental)</string>
+    <string name="pref_look_and_feel_weather">Cuaca</string>
+    <string name="pref_look_and_feel_weather_info">Tunjukkan info cuaca</string>
+    <string name="pref_look_and_feel_weather_info_summary">Konfigurasikan Info Cuaca di Tampilan Peek Anda</string>
+    <string name="pref_look_and_feel_weather_show_summary">Tampilkan info cuaca di tampilan mengintip Anda</string>
+    <string name="pref_look_and_feel_weather_provider">Tampilan Peek menggunakan wtrr.in untuk data cuaca. Mengambil cuaca dapat mentransfer data yang dapat diidentifikasi.</string>
+    <string name="pref_look_and_feel_weather_location">Lokasi cuaca</string>
+    <string name="pref_look_and_feel_weather_location_summary">Lokasi untuk laporan cuaca. Biarkan ini kosong untuk lokasi otomatis.</string>
+    <string name="pref_look_and_feel_weather_format">Format cuaca</string>
+    <string name="pref_look_and_feel_weather_format_summary">Format cuaca yang digunakan pada tampilan mengintip</string>
+    <string name="pref_look_and_feel_filter_notifications">Pemberitahuan Filter</string>
+    <string name="pref_look_and_feel_filter_notifications_summary">Pilih, pemberitahuan mana yang tidak akan ditampilkan</string>
+    <string name="pref_look_and_feel_filter_notifications_explanation">Ketuk entri untuk memblokir atau membuka blokir</string>
+    <string name="pref_look_and_feel_filter_notifications_blocked">Blokir pemberitahuan dari</string>
+    <string name="pref_look_and_feel_filter_notifications_shown">Pemberitahuan tersedia dari</string>
+    <string name="pref_look_and_feel_filter_notifications_empty">Tidak ada pemberitahuan yang tersedia</string>
+    <string name="pref_look_and_feel_filter_notifications_empty_summary">Sepertinya tidak ada yang bisa ditampilkan</string>
+    <string name="pref_look_and_feel_filter_notifications_unknown">Aplikasi yang tidak diketahui</string>
+    <string name="pref_look_and_feel_tint_notifications">Pemberitahuan warna</string>
+    <string name="pref_look_and_feel_tint_notifications_summary">Pemberitahuan warna dalam warna aplikasi mereka</string>
+    <string name="pref_look_and_feel_display_size">Ukuran tampilan</string>
+    <string name="pref_look_and_feel_display_size_summary">Ukuran tampilan tampilan mengintip %1$d%%</string>
+    <string name="pref_look_and_feel_rules">Aturan</string>
+    <string name="pref_look_and_feel_rules_summary">Kontrol kapan harus menampilkan tampilan mengintip</string>
+    <string name="pref_look_and_feel_rules_charging_state">Keadaan pengisian daya</string>
+    <string name="pref_look_and_feel_rules_charger">Jenis pengisian daya</string>
+    <string name="pref_look_and_feel_rules_charger_summary">Pilih jenis pengisian yang dihitung sebagai pengisian</string>
+    <string name="pref_look_and_feel_rules_battery_level">Level baterai</string>
+    <string name="pref_look_and_feel_rules_battery_level_summary">Tampilkan hanya di atas %1$d%%</string>
+    <string name="pref_look_and_feel_rules_battery_level_summary_zero">Tunjukkan di tingkat baterai apa pun</string>
+    <string name="pref_look_and_feel_rules_time">Periode waktu</string>
+    <string name="pref_look_and_feel_rules_time_summary">Tunjukkan dari %1$s ke %2$s</string>
+    <string name="pref_look_and_feel_rules_timeout">Batas waktu</string>
+    <string name="pref_look_and_feel_rules_timeout_summary_zero">Tidak ada batas waktu yang ditetapkan</string>
+    <string name="pref_look_and_feel_rules_ambient_mode">Mode ambien</string>
+    <string name="pref_look_and_feel_rules_ambient_mode_summary">Hanya tampilkan setelah pemberitahuan diterima</string>
+    <string name="pref_permissions">Izin</string>
+    <string name="pref_permissions_summary">Pengaturan yang terkait dengan izin</string>
+    <string name="pref_ignore_battery_optimizations">Abaikan optimasi baterai</string>
+    <string name="pref_ignore_battery_optimizations_summary">Mencegah penundaan yang disebabkan oleh sistem</string>
+    <string name="pref_notification">Akses pemberitahuan</string>
+    <string name="pref_notification_summary">Mengaktifkan atau menonaktifkan akses pemberitahuan</string>
+    <string name="pref_draw_over_other_apps">Tampilkan aplikasi lain</string>
+    <string name="pref_draw_over_other_apps_summary">Aktifkan atau nonaktifkan izin ini</string>
+    <string name="pref_admin">Admin perangkat</string>
+    <string name="pref_admin_summary">Aktifkan Admin Perangkat ini untuk mode normal\n Harap Perhatikan bahwa Anda harus menonaktifkan hak admin perangkat aplikasi sebelum menghapus instalannya!</string>
+    <string name="pref_root_mode">Mode root</string>
+    <string name="pref_root_mode_summary">Memungkinkan fungsionalitas root</string>
+    <string name="help_center">Pusat Bantuan</string>
+    <string name="help_center_summary">Menghapus instalan, tidak responsif, pembuangan baterai</string>
+    <string name="help_center_missing_permissions_text">Ketika pengaturan berwarna abu -abu dan memberitahu Anda untuk mengaktifkan sesuatu terlebih dahulu, Anda belum mengaktifkan izin yang dibutuhkan. Untuk memberikan izin yang hilang, buka halaman "Izin" di halaman utama dan persetujuan untuk menggunakan izin yang diperlukan. Anda sekarang dapat mengaktifkan pengaturan yang membutuhkan izin tersebut.</string>
+    <string name="help_center_uninstall">Cara menghapus instalan</string>
+    <string name="help_center_uninstall_text">Proses uninstall dapat gagal karena cacat desain dalam sistem operasi Android. Jika izin admin perangkat tidak dinonaktifkan sebelum menghapus proses akan gagal. Anda harus menonaktifkan izin admin perangkat sebelum menghapus instalasi.</string>
+    <string name="help_center_uninstall_button">Uninstall sekarang</string>
+    <string name="help_center_delays">Cara Memperbaiki Penundaan</string>
+    <string name="help_center_delays_text">Beberapa produsen lebih suka masa pakai baterai daripada fungsionalitas aplikasi, itulah sebabnya aplikasi ini hanya dapat bekerja dengan penundaan atau tidak sama sekali pada beberapa perangkat. Jika Anda mengalami penundaan, cobalah menonaktifkan optimisasi baterai untuk aplikasi atau periksa pengaturan khusus pabrikan lainnya.</string>
+    <string name="help_center_delays_button_one">Pengaturan Baterai</string>
+    <string name="help_center_delays_button_two">Khusus pabrikan</string>
+    <string name="help_center_battery_drain">Mencari tahu sumber pembuangan baterai</string>
+    <string name="help_center_battery_drain_text">Salah satu alasan pembuangan baterai adalah karena Anda menggunakan telepon dengan layar LCD. Aplikasi ini dirancang untuk ponsel dengan layar OLED yang dapat mematikan piksel hitam untuk menghemat energi. Tampilan LCD tidak dapat mematikan piksel hitam yang akan menghasilkan tampilan menggunakan lebih banyak energi ketika tampilan Peek diaktifkan. Alasan lain bisa jadi aplikasi lain berjalan di latar belakang saat tampilan Peek sedang berjalan. Android akan menampilkan konsumsi baterai mereka sebagai bagian dari konsumsi baterai Peek Display.</string>
+    <string name="loading">Memuat</string>
+    <string name="missing_permissions">Izin yang hilang</string>
+    <string name="permissions_notification_access">Nyalakan akses pemberitahuan untuk fitur ini</string>
+    <string name="permissions_device_admin_or_root">Nyalakan admin perangkat atau root untuk fitur ini</string>
+    <string name="about">Tentang</string>
+    <string name="about_summary">Tentang aplikasi</string>
+    <string name="about_app_version">Versi Aplikasi</string>
+    <string name="about_privacy">Konten eksternal</string>
+    <string name="about_privacy_desc">Konten eksternal akan dimuat dari GitHub. Baca Kebijakan Privasi mereka untuk informasi lebih lanjut.</string>
+    <string name="about_privacy_policy">Kebijakan Privasi</string>
+    <string name="about_contributors">Kontributor</string>
+    <string name="about_contributors_desc">Daftar kontributor</string>
+    <string name="about_general">Umum</string>
+    <string name="about_github">Repositori GitHub</string>
+    <string name="about_license">Lisensi</string>
+    <string name="about_icons">Ikon</string>
+    <string name="about_icons_desc">Ikon oleh Icons8 dan Google</string>
+    <string name="about_libraries">Perpustakaan</string>
+    <string name="about_libraries_desc">Daftar semua perpustakaan yang digunakan</string>
+
+    <string-array name="pref_look_and_feel_rules_charging_state_display">
+        <item>Tunjukkan pada keadaan pengisian apa pun</item>
+        <item>Tampilkan hanya saat mengisi daya</item>
+        <item>Tampilkan hanya saat pemakaian</item>
+    </string-array>
+
+    <string-array name="pref_look_and_feel_rules_charger_display">
+        <item>Ac</item>
+        <item>USB</item>
+        <item>Nirkabel</item>
+    </string-array>
+
+    <string-array name="pref_look_and_feel_orientation_display">
+        <item>Kunci otomatis</item>
+        <item>Potret</item>
+        <item>Lanskap</item>
+    </string-array>
+
+    <string-array name="pref_ao_glowStyle_display">
+        <item>Semua sisi</item>
+        <item>Sisi kiri dan kanan</item>
+        <item>Sisi atas dan bawah</item>
+    </string-array>
+
+    <string-array name="pref_ao_background_image_array_display">
+        <item>Tidak ada</item>
+        <item>Daniel Olah</item>
+        <item>Daniel Olah</item>
+        <item>Daniel Olah</item>
+        <item>Daniel Olah</item>
+        <item>Daniel Olah</item>
+        <item>Daniel Olah</item>
+        <item>Daniel Olah</item>
+        <item>Daniel Olah</item>
+        <item>Filip Baotic</item>
+        <item>Tyler Lastovich</item>
+        <item>Tyler Lastovich</item>
+        <item>Tyler Lastovich</item>
+        <item>Kebiasaan</item>
+    </string-array>
+    <string name="notification_action_reply">Balas</string>
+    <string name="pref_ao_showAlbumArt">Tampilan Art Album</string>
+    <string name="pref_ao_interactive_notification_icons">Ikon Pemberitahuan Interaktif</string>
+    <string name="pref_ao_interactive_notification_icons_summary">Tekan panjang pada ikon pemberitahuan untuk menampilkan pratinjau dan kemudian geser ke tindakan yang diinginkan untuk dieksekusi</string>
+    <string name="pref_ao_invert_interaction_highlight">Balikkan sorotan interaksi</string>
+    <string name="pref_ao_invert_interaction_highlight_summary">Perubahan apakah ikon pemberitahuan disorot selama interaksi atau diam</string>
+    <string name="pref_ao_notification_icon_size">Ukuran ikon pemberitahuan</string>
+    <string name="pref_ao_notification_icon_size_summary">Mengubah ukuran ikon pemberitahuan</string>
+    <string name="pref_ao_notification_icon_top_padding">Ikon pemberitahuan atas bantalan</string>
+    <string name="pref_ao_notification_icon_top_padding_summary">Sesuaikan ruang di atas ikon pemberitahuan</string>
+    <string name="pref_ao_notification_preview_position">Posisi Pratinjau Pemberitahuan</string>
+    <string name="pref_ao_notification_preview_position_summary">Posisi pratinjau pemberitahuan relatif terhadap ikon pemberitahuan</string>
+    <string name="pref_ao_top_padding">Padding teratas</string>
+    <string name="pref_ao_top_padding_summary">Sesuaikan posisi vertikal elemen tampilan</string>
+    <string-array name="pref_ao_notification_preview_position_display">
+        <item>Ikon di atas</item>
+        <item>Ikon di bawah ini</item>
+    </string-array>
+    <string-array name="pref_ao_notification_icon_size_display">
+        <item>Kecil</item>
+        <item>Standar</item>
+        <item>Diperbesar</item>
+    </string-array>
+    <string name="pref_ao_fingerprint_interaction">Mode interaksi sidik jari</string>
+    <string name="pref_ao_fingerprint_interaction_summary">Cara berinteraksi dengan ikon sidik jari</string>
+    <string name="pref_ao_fingerprint_interaction_swipe">Geser dari ikon</string>
+    <string name="pref_ao_fingerprint_interaction_longpress">Press panjang</string>
+    <string name="pref_ao_swipe_notification_open">Gesek ke pemberitahuan untuk membukanya</string>
+    <string name="pref_ao_swipe_notification_open_summary">Izinkan pemberitahuan pembukaan dengan menggesekkannya dari ikon sidik jari</string>
+    <string name="notification_dismiss">Membubarkan</string>
+    <string name="pref_look_and_feel_rules_pickup_mode">Mode pickup</string>
+    <string name="pref_look_and_feel_rules_pickup_mode_summary">Tampilkan hanya saat mengangkat telepon</string>
+    <string name="pref_pickup_sensitivity">Sensitivitas pickup</string>
+    <string name="pref_pickup_sensitivity_summary">Sesuaikan sensitivitas deteksi penjemputan</string>
+    <string-array name="pref_pickup_sensitivity_display">
+        <item>Tinggi</item>
+        <item>Sedang</item>
+        <item>Rendah</item>
+    </string-array>
+    <string name="pref_ao_lock_icon">Gunakan ikon kunci</string>
+    <string name="pref_ao_lock_icon_summary">Ganti ikon sidik jari dengan ikon kunci</string>
+    <string name="donate">Menyumbangkan</string>
+    <string name="donate_summary">Mendukung pengembangan tampilan mengintip</string>
+</resources>

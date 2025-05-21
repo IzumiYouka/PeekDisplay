@@ -1,25 +1,27 @@
-AlwaysOn is an app for every device with an AMOLED or OLED display.
-It adds an always-on display with various customization options regarding the watch face, the behavior, and the background.
-Take a look at your phone and have everything you need in one place: the time, the date, the battery state, your notifications, and more.
+Peek Display transforms your phone into a smart, always-on companion — designed especially for AMOLED and OLED screens (and still effective on IPS displays).
+Enjoy a sleek Always-On Display and peek notifications, fully customizable to match your style and needs.
+Choose your perfect watch face, adjust behavior and background, and keep everything you care about at a glance: time, date, battery level, notifications, and more — all without unlocking your device.
 
-<font color="#2467d6"><b>Features</b></font>
-- Always on display
-- Multiple watch faces
-- View your notifications
-- View what you are listening to
-- Edge glow
-- Rules
+<font color="#2467d6"><b>Features:</b></font>
+- Always-On Display (AOD)
+- Multiple customizable watch faces
+- View and preview notifications
+- Interact with notifications in various ways
+- Now playing: see what you're listening to
+- Edge glow for visual alerts
+- Rules to control behavior based on conditions
 - Double tap to wake
-- Pocket mode
-- Do not disturb mode
+- Gesture-based interaction
+- Pocket mode (auto turn-off display when in pocket)
+- Pick-up mode (wake display when device is lifted)
+- Do Not Disturb mode integration
 - Adjustable brightness
-- Quick tiles
-- Widgets
-- Power saver mode [for root]
-- Moves content to prevent burn-ins
-- Minimal permissions
+- Quick Settings tile for easy access
+- Home screen widget
+- Power saver mode (requires root)
+- Burn-in prevention (moves content periodically)
+- Minimal and privacy-respecting permissions
 
 <font color="#2467d6"><b>Related Links</b></font>
-Source code: <a href="https://github.com/Domi04151309/AlwaysOn">https://github.com/Domi04151309/AlwaysOn</a>
-Website: <a href="https://domi04151309.github.io/Android/AlwaysOn">https://domi04151309.github.io/Android/AlwaysOn</a>
+Source code: <a href="https://github.com/Heitezy/PeekDisplay">https://github.com/Heitezy/PeekDisplay</a>
 Icons8: <a href="https://icons8.com/">https://icons8.com/</a>

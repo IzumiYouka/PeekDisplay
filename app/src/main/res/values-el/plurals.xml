@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <plurals name="pref_look_and_feel_rules_timeout_summary">
+        <item quantity="one">Σταματώ μετά %d δεύτερος</item>
+        <item quantity="other">Σταματώ μετά %d δευτερόλεπτα</item>
+    </plurals>
+</resources>

@@ -1,1 +1,1 @@
-AlwaysOn | Always On Display
+PeekDisplay | Always On Display

@@ -1,1 +1,1 @@
-Android app which adds an always on display. Free, no ads and open source.
+Android app which adds an always on display and peek notifications. No ads and open source.

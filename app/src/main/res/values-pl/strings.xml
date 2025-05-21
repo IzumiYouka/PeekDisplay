@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="device_admin_description">Pozwól, aby wyświetlacz PEEK wyłączyć ekran</string>
+    <string name="notification_listener_description">Pokaż powiadomienia na wyświetlaczu</string>
+    <string name="service_text">Wyświetlacz PEEK działa w tle</string>
+    <string name="service_channel">Kanał serwisowy</string>
+    <string name="setup_root_failed">Żądanie główne nie powiodło się! Spróbuj ponownie lub przełącz tryb!</string>
+    <string name="device_admin">Administrator urządzenia</string>
+    <string name="device_admin_summary">Musisz aktywować ten administrator urządzenia lub przejść na tryb root, aby ta aplikacja działała.</string>
+    <string name="notification_listener_service">Dostęp do powiadomień</string>
+    <string name="notification_listener_service_summary">Musisz włączyć dostęp do powiadomień, aby aplikacja wyświetlała powiadomienia na wyświetlaczu PEEK.</string>
+    <string name="setup_draw_over_other_apps">Wyświetlaj inne aplikacje</string>
+    <string name="setup_draw_over_other_apps_summary">To pozwolenie jest wymagane do pokazania wyświetlacza PEEK.</string>
+    <string name="setup_phone_state">Przeczytaj stan telefoniczny</string>
+    <string name="setup_phone_state_summary">To pozwolenie jest wymagane do zatrzymania wyświetlania PEEK dla połączeń przychodzących.</string>
+    <string name="setup_calendar">Przeczytaj kalendarz</string>
+    <string name="setup_calendar_summary">Musisz włączyć dostęp do kalendarza, aby aplikacja wyświetlała swoje zdarzenia na wyświetlaczu PEEK.</string>
+    <string name="setup_skip">Pominąć</string>
+    <string name="setup_continue">Kontynuować</string>
+    <string name="setup_error">Coś poszło nie tak! Spróbuj ponownie!</string>
+    <string name="dialog_device_admin_text">Należy pamiętać, że musisz dezaktywować uprawnienia administratora urządzeń aplikacji przed jego odinstalowaniem! Aby upewnić się, że to zrozumiałeś, wykonaj następującą operację:\n7 + 12</string>
+    <string name="dialog_device_admin_result">Wynik</string>
+    <string name="dialog_device_admin_error">Zły wynik. Spróbuj ponownie.</string>
+    <string name="app_description">Aplikacja na Androida, która dodaje Peek Display.</string>
+    <string name="charged">%1$d%% naładowano</string>
+    <string name="shortcut_disabled">Wyłączony</string>
+    <string name="pref_int_failed">Nie można użyć tej wartości</string>
+    <string name="pref_general">Ustawienia ogólne</string>
+    <string name="pref_enabled">Obecnie włączone</string>
+    <string name="pref_disabled">Obecnie wyłączone</string>
+    <string name="pref_always_on">Wyświetlacz PEEK</string>
+    <string name="pref_charging">Animacja ładowania</string>
+    <string name="pref_look_and_feel">Wyglądać i czuć</string>
+    <string name="pref_ao_watch_face">Obejrzyj twarz</string>
+    <string name="pref_ao_watch_face_summary">Ustawienia związane z twarzą zegarka Peek wyświetlacz</string>
+    <string name="pref_ao_background">Tło</string>
+    <string name="pref_ao_background_summary">Ustawienia związane z tłem wyświetlania PEEK</string>
+    <string name="pref_ao_behavior">Zachowanie</string>
+    <string name="pref_ao_behavior_summary">Ustawienia związane z zachowaniem aplikacji</string>
+    <string name="pref_ao_other">Inne ustawienia</string>
+    <string name="pref_look_and_feel_hour">Użyj 12-godzinnego zegara</string>
+    <string name="pref_look_and_feel_hour_summary_on">Obecnie używany: 12-godzinny zegar</string>
+    <string name="pref_look_and_feel_hour_summary_off">Obecnie używane: 24-godzinny zegar</string>
+    <string name="pref_look_and_feel_am_pm">Pokaż AM / PM</string>
+    <string name="pref_look_and_feel_am_pm_summary">Pokaż AM / PM podczas korzystania z 12-godzinnego zegara</string>
+    <string name="pref_look_and_feel_ao">Wyświetl wyświetlacz</string>
+    <string name="pref_look_and_feel_ao_summary">Zmienia wygląd wyświetlacza PEEK</string>
+    <string name="pref_look_and_feel_colors">Zabarwienie</string>
+    <string name="pref_look_and_feel_colors_summary">Wybierz kolory dla niektórych elementów</string>
+    <string name="pref_look_and_feel_colors_clock">Kolor zegara</string>
+    <string name="pref_look_and_feel_colors_date">Kolor daty</string>
+    <string name="pref_look_and_feel_colors_battery">Kolor baterii</string>
+    <string name="pref_look_and_feel_colors_music_controls">Muzyka kontroluje kolor</string>
+    <string name="pref_look_and_feel_colors_calendar">Kolor zdarzenia kalendarza</string>
+    <string name="pref_look_and_feel_colors_message">Kolor wiadomości</string>
+    <string name="pref_look_and_feel_colors_weather">Kolor pogody</string>
+    <string name="pref_look_and_feel_colors_notification">Kolor powiadomienia</string>
+    <string name="pref_look_and_feel_colors_fingerprint">Ikona odcisków palców</string>
+    <string name="pref_ao_showClock">Wyświetlić czas</string>
+    <string name="pref_ao_showDate">Wyświetlić datę</string>
+    <string name="pref_ao_showBatteryIcn">Wyświetl ikonę baterii</string>
+    <string name="pref_ao_showBattery">Wyświetlić procent baterii</string>
+    <string name="pref_ao_showMusicControls">Wyświetlanie elementów sterujących muzyką</string>
+    <string name="pref_ao_showNotifications">Wyświetl liczbę powiadomień</string>
+    <string name="pref_ao_showNotificationIcons">Wyświetl ikony powiadomień</string>
+    <string name="pref_ao_fingerprint">Wyświetl ikonę odcisków palców</string>
+    <string name="pref_ao_fingerprint_margin">Margines odcisku palca</string>
+    <string name="pref_ao_fingerprint_margin_summary">Miejsce poniżej ikony odcisku palców</string>
+    <string name="pref_ao_edgeGlow">Blask krawędzi</string>
+    <string name="pref_ao_edgeGlow_summary">Świecące krawędzie, gdy otrzymano powiadomienie</string>
+    <string name="pref_ao_glowDuration">Świecący czas trwania (w milisekundach)</string>
+    <string name="pref_ao_glowDuration_summary">Czas trwania krawędzi świecą</string>
+    <string name="pref_ao_glowDelay">Świecające opóźnienie (w milisekundach)</string>
+    <string name="pref_ao_glowDelay_summary">Interwał między blaskami</string>
+    <string name="pref_ao_glowStyle">Styl krawędzi</string>
+    <string name="pref_ao_glowStyle_summary">Zmienia wygląd świecących krawędzi</string>
+    <string name="pref_ao_glowColor">Blask krawędzi</string>
+    <string name="pref_ao_glowColor_summary">Zmienia kolor świecących krawędzi</string>
+    <string name="pref_ao_vibration">Czas trwania wibracji (w milisekundach)</string>
+    <string name="pref_ao_vibration_summary">Czas trwania telefon wibruje po dwukrotnie ekranu</string>
+    <string name="pref_ao_animation_delay">Opóźnienie ruchu (w minutach)</string>
+    <string name="pref_ao_animation_delay_summary">Czas między różnymi pozycjami treści\nOstrzeżenie: zbyt wysokie wartości mogą powodować oparzenia ekranu!</string>
+    <string name="pref_ao_smooth_animation">Ożywiony ruch</string>
+    <string name="pref_ao_smooth_animation_summary">Animuj zmiany pozycji</string>
+    <string name="pref_ao_force_brightness">Wymuszają pewną jasność na wyświetlaczu Peek</string>
+    <string name="pref_ao_force_brightness_summary">Stuknij, aby zmienić wymuszoną jasność</string>
+    <string name="pref_ao_force_brightness_title">Jasność</string>
+    <string name="pref_ao_force_brightness_example">W ten sposób pojawi się jasny tekst na wyświetlaczu Peek.</string>
+    <string name="pref_ao_pocket_mode">Tryb kieszeni</string>
+    <string name="pref_ao_pocket_mode_summary">Wyłącza Peek wyświetlacz w kieszeni\nOSTRZEŻENIE: Wykorzystanie czujnika może spowodować zwiększone wykorzystanie baterii!</string>
+    <string name="pref_ao_dnd">Włącz nie przeszkadzaj</string>
+    <string name="pref_ao_dnd_summary">Włącza tryb nie zakłócaj, gdy wyświetla się PEEK</string>
+    <string name="pref_ao_disable_on_dnd">Wyłącz w tryb nie zakłócaj</string>
+    <string name="pref_ao_disable_on_dnd_summary">Pokaż tylko, kiedy tryb nie przeszkadza, jest nieaktywny</string>
+    <string name="pref_ao_power_saving">Tryb oszczędzania mocy (root)</string>
+    <string name="pref_ao_power_saving_summary">Włącza tryb zasilania systemu \\, gdy jest włączony wyświetlacz PEEK</string>
+    <string name="pref_ao_double_tap_speed">Prędkość podwójnej</string>
+    <string name="pref_ao_double_tap_speed_summary">Czas dwa krany mogą być rozdzielone (w milisekundach)</string>
+    <string name="pref_ao_double_tap_disabled">Wyłącz podwójną klapę</string>
+    <string name="pref_ao_double_tap_disabled_summary">Wyłącza podwójne uderzenie w celu wyjścia z PEEK wyświetlacza (nie zalecane)</string>
+    <string name="pref_ao_message">Wiadomość</string>
+    <string name="pref_ao_message_summary">Komunikat wyświetlany na wyświetlaczu Peek</string>
+    <string name="pref_ao_date_format">Format daty</string>
+    <string name="pref_ao_date_format_summary">Format daty używany na wyświetlaczu PEEK</string>
+    <string name="pref_ao_date_format_dialog_text">Musisz podążać za określonym wzorem</string>
+    <string name="pref_ao_date_format_dialog_neutral">Dowiedz się więcej</string>
+    <string name="pref_ao_date_format_illegal">Nielegalny format</string>
+    <string name="pref_ao_calendar">Pokaż wydarzenia</string>
+    <string name="pref_ao_calendar_summary">Pokaż wydarzenia w następnych 24 godzinach na wyświetlaczu Peek</string>
+    <string name="pref_look_and_feel_charging">Ładowanie animacji</string>
+    <string name="pref_look_and_feel_charging_summary">Zmienia wygląd animacji ładowania</string>
+    <string name="pref_ao_background_image">Obraz tła</string>
+    <string name="pref_ao_background_image_summary">Zmień obraz tła wyświetlacza Peek</string>
+    <string name="pref_look_and_feel_hide_display_cutouts">Ukryj wycięcia wyświetlacza</string>
+    <string name="pref_look_and_feel_hide_display_cutouts_summary">Ukryj wycinanki wyświetlacza na pełnometrze</string>
+    <string name="pref_look_and_feel_orientation">Orientacja</string>
+    <string name="pref_look_and_feel_orientation_summary">Zmienia orientację wyświetlania</string>
+    <string name="pref_look_and_feel_heads_up">Ukryj powiadomienia o głowach (root)</string>
+    <string name="pref_look_and_feel_heads_up_summary">Zapobiega wyświetlaniu powiadomień o głowach (eksperymentalne)</string>
+    <string name="pref_look_and_feel_weather">Pogoda</string>
+    <string name="pref_look_and_feel_weather_info">Pokaż informacje o pogodzie</string>
+    <string name="pref_look_and_feel_weather_info_summary">Skonfiguruj informacje o pogodzie na wyświetlaczu PEEK</string>
+    <string name="pref_look_and_feel_weather_show_summary">Pokaż informacje o pogodzie na swoim wyświetlaczu</string>
+    <string name="pref_look_and_feel_weather_provider">PEEK Display wykorzystuje wtrr.in do danych pogodowych. Pobieranie pogody może przenieść możliwe do zidentyfikowania dane.</string>
+    <string name="pref_look_and_feel_weather_location">Lokalizacja pogody</string>
+    <string name="pref_look_and_feel_weather_location_summary">Lokalizacja raportu pogodowego. Pozostaw to puste na automatyczną lokalizację.</string>
+    <string name="pref_look_and_feel_weather_format">Format pogody</string>
+    <string name="pref_look_and_feel_weather_format_summary">Format pogody używany na wyświetlaczu PEEK</string>
+    <string name="pref_look_and_feel_filter_notifications">Powiadomienia filtra</string>
+    <string name="pref_look_and_feel_filter_notifications_summary">Wybierz, które powiadomienia nie będą wykazywać</string>
+    <string name="pref_look_and_feel_filter_notifications_explanation">Stuknij wpisy, aby je zablokować lub odblokować</string>
+    <string name="pref_look_and_feel_filter_notifications_blocked">Powiadomienia o blokach z</string>
+    <string name="pref_look_and_feel_filter_notifications_shown">Powiadomienia dostępne z</string>
+    <string name="pref_look_and_feel_filter_notifications_empty">Brak dostępnych powiadomień</string>
+    <string name="pref_look_and_feel_filter_notifications_empty_summary">Wygląda na to, że nie ma nic do pokazania</string>
+    <string name="pref_look_and_feel_filter_notifications_unknown">Nieznana aplikacja</string>
+    <string name="pref_look_and_feel_tint_notifications">Powiadomienia o odcieniu</string>
+    <string name="pref_look_and_feel_tint_notifications_summary">Powiadomienia o odcieniu w kolorach aplikacji</string>
+    <string name="pref_look_and_feel_display_size">Rozmiar wyświetlania</string>
+    <string name="pref_look_and_feel_display_size_summary">Rozmiar wyświetlacza wyświetlacza PEEK IS %1$d %%</string>
+    <string name="pref_look_and_feel_rules">Zasady</string>
+    <string name="pref_look_and_feel_rules_summary">Kontroluj, kiedy pokazać wyświetlacz PEEK</string>
+    <string name="pref_look_and_feel_rules_charging_state">Stan ładowania</string>
+    <string name="pref_look_and_feel_rules_charger">Typ ładowania</string>
+    <string name="pref_look_and_feel_rules_charger_summary">Wybierz, które typy ładowania liczą jako ładowanie</string>
+    <string name="pref_look_and_feel_rules_battery_level">Poziom baterii</string>
+    <string name="pref_look_and_feel_rules_battery_level_summary">Pokaż tylko powyżej %1$d%%</string>
+    <string name="pref_look_and_feel_rules_battery_level_summary_zero">Pokaż na dowolnym poziomie baterii</string>
+    <string name="pref_look_and_feel_rules_time">Okres</string>
+    <string name="pref_look_and_feel_rules_time_summary">Pokaz %1$s Do %2$s</string>
+    <string name="pref_look_and_feel_rules_timeout">Limit czasu</string>
+    <string name="pref_look_and_feel_rules_timeout_summary_zero">Nie ustalono limitu czasu</string>
+    <string name="pref_look_and_feel_rules_ambient_mode">Tryb otoczenia</string>
+    <string name="pref_look_and_feel_rules_ambient_mode_summary">Pokaż tylko po otrzymaniu powiadomienia</string>
+    <string name="pref_permissions">Uprawnienia</string>
+    <string name="pref_permissions_summary">Ustawienia związane z uprawnieniami</string>
+    <string name="pref_ignore_battery_optimizations">Zignoruj ​​optymalizacje baterii</string>
+    <string name="pref_ignore_battery_optimizations_summary">Zapobiega opóźnieniu spowodowanym przez system</string>
+    <string name="pref_notification">Dostęp do powiadomień</string>
+    <string name="pref_notification_summary">Włącz lub wyłącz dostęp do powiadomień</string>
+    <string name="pref_draw_over_other_apps">Wyświetlaj inne aplikacje</string>
+    <string name="pref_draw_over_other_apps_summary">Włącz lub wyłącz to pozwolenie</string>
+    <string name="pref_admin">Administrator urządzenia</string>
+    <string name="pref_admin_summary">Aktywuj ten administrator urządzenia do trybu normalnego\nNależy pamiętać, że musisz dezaktywować uprawnienia administratora urządzeń aplikacji przed jego odinstalowaniem!</string>
+    <string name="pref_root_mode">Tryb korzenia</string>
+    <string name="pref_root_mode_summary">Umożliwia funkcjonalność korzenia</string>
+    <string name="help_center">Centrum pomocy</string>
+    <string name="help_center_summary">Odinstalowanie, brak reakcji, drenaż akumulatora</string>
+    <string name="help_center_missing_permissions_text">Kiedy ustawienie jest rozszerzone i mówi ci, abyś mógł najpierw coś włączyć, nie włączyłeś jeszcze potrzebnych uprawnień. Aby przyznać brakujące uprawnienia, otwórz stronę „Uprawnienia” na stronie głównej i zgoda na korzystanie z wymaganych uprawnień. Możesz teraz włączyć ustawienia wymagające tych uprawnień.</string>
+    <string name="help_center_uninstall">Jak odinstalować</string>
+    <string name="help_center_uninstall_text">Proces odinstalowania może zawieść z powodu wady projektowej w systemie operacyjnym Android. Jeśli zgoda administracyjna urządzenia nie została wyłączona przed odinstalowaniem, proces nie powiedzie się. Przed odinstalowaniem musisz wyłączyć zgodę na administrator urządzenia.</string>
+    <string name="help_center_uninstall_button">Odinstaluj teraz</string>
+    <string name="help_center_delays">Jak naprawić opóźnienia</string>
+    <string name="help_center_delays_text">Niektórzy producenci wolą żywotność baterii niż funkcjonalność aplikacji, dlatego ta aplikacja może działać tylko z opóźnieniami lub wcale na niektórych urządzeniach. Jeśli doświadczasz opóźnień, spróbuj wyłączyć optymalizacje baterii dla aplikacji lub sprawdź inne ustawienia specyficzne dla producenta.</string>
+    <string name="help_center_delays_button_one">Ustawienia baterii</string>
+    <string name="help_center_delays_button_two">Specyficzne dla producenta</string>
+    <string name="help_center_battery_drain">Ustalenie źródła drenażu akumulatora</string>
+    <string name="help_center_battery_drain_text">Jednym z powodów drenażu baterii może być to, że używasz telefonu z wyświetlaczem LCD. Ta aplikacja jest przeznaczona do telefonów z wyświetlaczem OLED, który może wyłączyć czarne piksele, aby oszczędzać energię. Wyświetlacze LCD nie mogą wyłączyć czarnych pikseli, co spowoduje wyświetlacz przy użyciu znacznie więcej energii, gdy jest włączony PEEK Display. Innym powodem może być to, że inne aplikacje działają w tle podczas pracy PEEK. Android wyświetli zużycie baterii w ramach zużycia baterii Peek Display.</string>
+    <string name="loading">Załadunek</string>
+    <string name="missing_permissions">Brakuje uprawnień</string>
+    <string name="permissions_notification_access">Włącz dostęp do powiadomień o tej funkcji</string>
+    <string name="permissions_device_admin_or_root">Włącz administrator urządzenia lub root do tej funkcji</string>
+    <string name="about">O</string>
+    <string name="about_summary">O aplikacji</string>
+    <string name="about_app_version">Wersja aplikacji</string>
+    <string name="about_privacy">Treść zewnętrzna</string>
+    <string name="about_privacy_desc">Treść zewnętrzna zostanie załadowana z GitHub. Przeczytaj ich politykę prywatności, aby uzyskać więcej informacji.</string>
+    <string name="about_privacy_policy">Polityka prywatności</string>
+    <string name="about_contributors">Współpracownicy</string>
+    <string name="about_contributors_desc">Lista współpracowników</string>
+    <string name="about_general">Ogólny</string>
+    <string name="about_github">Repozytorium Github</string>
+    <string name="about_license">Licencja</string>
+    <string name="about_icons">Ikony</string>
+    <string name="about_icons_desc">Ikony według Icons8 i Google</string>
+    <string name="about_libraries">Biblioteki</string>
+    <string name="about_libraries_desc">Lista wszystkich używanych bibliotek</string>
+
+    <string-array name="pref_look_and_feel_rules_charging_state_display">
+        <item>Pokaż w każdym stanie ładowania</item>
+        <item>Pokaż tylko podczas ładowania</item>
+        <item>Pokaż tylko podczas rozładowania</item>
+    </string-array>
+
+    <string-array name="pref_look_and_feel_rules_charger_display">
+        <item>AC</item>
+        <item>USB</item>
+        <item>Bezprzewodowy</item>
+    </string-array>
+
+    <string-array name="pref_look_and_feel_orientation_display">
+        <item>Auto-blokada</item>
+        <item>Portret</item>
+        <item>Krajobraz</item>
+    </string-array>
+
+    <string-array name="pref_ao_glowStyle_display">
+        <item>Wszystkie strony</item>
+        <item>Lewe i prawe boki</item>
+        <item>Górne i dolne strony</item>
+    </string-array>
+
+    <string-array name="pref_ao_background_image_array_display">
+        <item>Nic</item>
+        <item>Daniel Olah</item>
+        <item>Daniel Olah</item>
+        <item>Daniel Olah</item>
+        <item>Daniel Olah</item>
+        <item>Daniel Olah</item>
+        <item>Daniel Olah</item>
+        <item>Daniel Olah</item>
+        <item>Daniel Olah</item>
+        <item>Filip Baotic</item>
+        <item>Tyler Lastovich</item>
+        <item>Tyler Lastovich</item>
+        <item>Tyler Lastovich</item>
+        <item>Zwyczaj</item>
+    </string-array>
+    <string name="notification_action_reply">Odpowiedz</string>
+    <string name="pref_ao_showAlbumArt">Wyświetlacz sztuki albumu</string>
+    <string name="pref_ao_interactive_notification_icons">Interaktywne ikony powiadomień</string>
+    <string name="pref_ao_interactive_notification_icons_summary">Długa naciśnij ikonę powiadomień, aby wyświetlić podgląd, a następnie przesuń do pożądanej akcji do wykonania</string>
+    <string name="pref_ao_invert_interaction_highlight">Odwrotna atrakcja interakcji</string>
+    <string name="pref_ao_invert_interaction_highlight_summary">Zmiany, czy ikony powiadomienia są wyróżnione podczas interakcji, czy na biegu jałowym</string>
+    <string name="pref_ao_notification_icon_size">Rozmiar ikony powiadomień</string>
+    <string name="pref_ao_notification_icon_size_summary">Zmienia rozmiar ikon powiadomień</string>
+    <string name="pref_ao_notification_icon_top_padding">Ikona powiadomienia górna wyściółka</string>
+    <string name="pref_ao_notification_icon_top_padding_summary">Dostosuj przestrzeń powyżej ikon powiadomienia</string>
+    <string name="pref_ao_notification_preview_position">Pozycja podglądu powiadomień</string>
+    <string name="pref_ao_notification_preview_position_summary">Pozycja podglądu powiadomienia w stosunku do ikony powiadomienia</string>
+    <string name="pref_ao_top_padding">Górna wyściółka</string>
+    <string name="pref_ao_top_padding_summary">Dostosuj pozycję pionową elementów wyświetlania</string>
+    <string-array name="pref_ao_notification_preview_position_display">
+        <item>Powyżej ikony</item>
+        <item>Poniżej ikony</item>
+    </string-array>
+    <string-array name="pref_ao_notification_icon_size_display">
+        <item>Mały</item>
+        <item>Standard</item>
+        <item>Powiększone</item>
+    </string-array>
+    <string name="pref_ao_fingerprint_interaction">Tryb interakcji odcisków palców</string>
+    <string name="pref_ao_fingerprint_interaction_summary">Jak wchodzić w interakcje z ikoną odcisków palców</string>
+    <string name="pref_ao_fingerprint_interaction_swipe">Przesuń z ikony</string>
+    <string name="pref_ao_fingerprint_interaction_longpress">Długa prasa</string>
+    <string name="pref_ao_swipe_notification_open">Przesuń do powiadomienia, aby je otworzyć</string>
+    <string name="pref_ao_swipe_notification_open_summary">Pozwól powiadomienia otwierające, przesuwając do nich z ikony odcisków palców</string>
+    <string name="notification_dismiss">Odrzucać</string>
+    <string name="pref_look_and_feel_rules_pickup_mode">Tryb odbioru</string>
+    <string name="pref_look_and_feel_rules_pickup_mode_summary">Pokaż tylko podczas odbierania telefonu</string>
+    <string name="pref_pickup_sensitivity">Czułość odbioru</string>
+    <string name="pref_pickup_sensitivity_summary">Dostosuj czułość wykrywania odbioru</string>
+    <string-array name="pref_pickup_sensitivity_display">
+        <item>Wysoki</item>
+        <item>Średni</item>
+        <item>Niski</item>
+    </string-array>
+    <string name="pref_ao_lock_icon">Użyj ikony blokady</string>
+    <string name="pref_ao_lock_icon_summary">Wymień ikonę odcisków palców na ikonę zamka</string>
+    <string name="donate">Podarować</string>
+    <string name="donate_summary">Wspieraj rozwój Peek Display</string>
+</resources>

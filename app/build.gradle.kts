@@ -9,16 +9,16 @@ plugins {
 }
 
 android {
-    namespace = "io.github.domi04151309.alwayson"
-    compileSdk = 34
+    namespace = "heitezy.peekdisplay"
+    compileSdk = 35
 
     defaultConfig {
-        applicationId = "io.github.domi04151309.alwayson"
+        applicationId = "heitezy.peekdisplay"
         minSdk = 24
         //noinspection EditedTargetSdkVersion
         targetSdk = 34
-        versionCode = 3100
-        versionName = "3.10.0"
+        versionCode = 6
+        versionName = "1.0.0"
     }
 
     buildTypes {
@@ -76,7 +76,7 @@ tasks.register("license") {
             )
         }
         if (!(
-                android.defaultConfig.applicationId?.contains("domi04151309") == true ||
+                android.defaultConfig.applicationId?.contains("heitezy") == true ||
                     readAndUnderstoodLicense
             )
         ) {

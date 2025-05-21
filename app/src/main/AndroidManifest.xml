@@ -17,9 +17,9 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_CALENDAR"/>
     <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
-    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <!-- Needed for some notification icons -->
     <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"
@@ -105,7 +105,7 @@
         </receiver>
 
         <activity
-            android:name="io.github.domi04151309.alwayson.actions.alwayson.AlwaysOn"
+            android:name="heitezy.peekdisplay.actions.alwayson.AlwaysOn"
             android:configChanges="orientation|screenSize"
             android:excludeFromRecents="true"
             android:launchMode="singleInstance"
@@ -114,9 +114,9 @@
             android:theme="@style/AppThemeScreenOff" />
 
         <service
-            android:name="io.github.domi04151309.alwayson.services.AlwaysOnTileService"
+            android:name="heitezy.peekdisplay.services.AlwaysOnTileService"
             android:icon="@drawable/ic_always_on_black"
-            android:label="@string/AlwaysOn"
+            android:label="@string/PeekDisplay"
             android:exported="true"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
@@ -179,12 +179,12 @@
         </activity>
 
         <receiver
-            android:name="io.github.domi04151309.alwayson.receivers.AlwaysOnAppWidgetProvider"
+            android:name="heitezy.peekdisplay.receivers.AlwaysOnAppWidgetProvider"
             android:exported="true"
-            android:label="@string/AlwaysOn">
+            android:label="@string/PeekDisplay">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-                <action android:name="io.github.domi04151309.alwayson.ALWAYS_ON_STATE_CHANGED" />
+                <action android:name="heitezy.peekdisplay.ALWAYS_ON_STATE_CHANGED" />
             </intent-filter>
 
             <meta-data
@@ -248,6 +248,13 @@
             android:showOnLockScreen="true"
             android:taskAffinity=""
             android:theme="@style/AppThemeScreenOff" />
+
+        <service
+            android:name=".services.PickUpService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="specialUse" />
+
     </application>
 
 </manifest>

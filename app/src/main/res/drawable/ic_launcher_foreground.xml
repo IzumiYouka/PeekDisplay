@@ -8,19 +8,23 @@
       android:translateX="27.27"
       android:translateY="27.27">
     <path
-        android:pathData="M17,1L7,1c-1.1,0 -2,0.9 -2,2v18c0,1.1 0.9,2 2,2h10c1.1,0 2,-0.9 2,-2L19,3c0,-1.1 -0.9,-2 -2,-2zM17,21L7,21v-1h10zM17,18L7,18L7,6h10zM7,4L7,3h10v1z"
+        android:pathData="M17,1L7,1c-1.1,0 -2,0.9 -2,2v18c0,1.1 0.9,2 2,2h10c1.1,0 2,-0.9 2,-2L19,3c0,-1.1 -0.9,-2 -2,-2zM17,21L7,21L7,3h10v18z"
         android:fillColor="#fff"/>
     <path
-        android:fillColor="#FF000000"
-        android:pathData="M8.5,8.5h7"/>
-    <path
-        android:pathData="M8.5,8v1h7V8h-7z"
+        android:pathData="M12,4.2c-2.16,0 -3.9,1.74 -3.9,3.9s1.74,3.9 3.9,3.9s3.9,-1.74 3.9,-3.9S14.16,4.2 12,4.2zM12,10.7c-1.63,0 -2.8,-1.17 -2.8,-2.6s1.17,-2.8 2.8,-2.8s2.8,1.37 2.8,2.8S13.63,10.7 12,10.7z"
         android:fillColor="#fff"/>
     <path
-        android:fillColor="#FF000000"
-        android:pathData="M8.5,10.5h7"/>
+        android:pathData="M12,6.2V8l1,0.75"
+        android:strokeWidth="0.7"
+        android:strokeColor="#fff"/>
     <path
-        android:pathData="M8.5,10v1h7v-1h-7z"
+        android:pathData="M9.6,16m-0.84,0a0.84,0.84 0,1 1,1.68 0a0.84,0.84 0,1 1,-1.68 0"
+        android:fillColor="#fff"/>
+    <path
+        android:pathData="M12,16m-0.84,0a0.84,0.84 0,1 1,1.68 0a0.84,0.84 0,1 1,-1.68 0"
+        android:fillColor="#fff"/>
+    <path
+        android:pathData="M14.4,16m-0.84,0a0.84,0.84 0,1 1,1.68 0a0.84,0.84 0,1 1,-1.68 0"
         android:fillColor="#fff"/>
   </group>
 </vector>

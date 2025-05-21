@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="pref_look_and_feel_rules_timeout_summary">
+        <item quantity="one">Зупинити через %d секунду</item>
+        <item quantity="few">Зупинити через %d секунди</item>
+        <item quantity="other">Зупинити через %d секунд</item>
+    </plurals>
+</resources>

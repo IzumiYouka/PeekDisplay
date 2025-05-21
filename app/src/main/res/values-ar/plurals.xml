@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <plurals name="pref_look_and_feel_rules_timeout_summary">
+        <item quantity="one">توقف بعد %d ثانية</item>
+        <item quantity="other">توقف بعد %d ثوان</item>
+    </plurals>
+</resources>

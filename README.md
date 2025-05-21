@@ -1,16 +1,12 @@
-![App Icon](https://raw.githubusercontent.com/Domi04151309/AlwaysOn/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp)
+![App Icon](https://raw.githubusercontent.com/Heitezy/PeekDisplay/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp)
 
-# AlwaysOn for Android™
+# Peek Display for Android™
 
-AlwaysOn is an app for every device with an AMOLED or OLED display.
-It adds an always-on display with various customization options regarding the watch face, the
-behavior, and the background.
-Take a look at your phone and have everything you need in one place: the time, the date, the battery
-state, your notifications, and more.
+Peek Display brings a customizable Always-On Display to any device — perfect for AMOLED and OLED screens, and still useful on IPS displays. Personalize your experience with a variety of watch faces, background styles, and smart behaviors to match how you use your phone. With just a glance, get all the information you need in one place: time, date, battery level, current music, notifications, and more — no need to unlock your device.
 
-<a href="https://f-droid.org/packages/io.github.domi04151309.alwayson">
-  <img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
-  alt="Get it on F-Droid"
+<a href="https://play.google.com/store/apps/details?id=heitezy.peekdisplay">
+  <img src="https://raw.githubusercontent.com/Heitezy/PeekDisplay/main/fastlane/metadata/android/en-US/images/GetItOnGooglePlay_Badge_Web_color_English.png"
+  alt="Get it on Google Play"
   height="80"/>
 </a>
 
@@ -18,20 +14,23 @@ state, your notifications, and more.
 
 Support the development by donating.
 
-<a href="https://www.paypal.com/donate/?hosted_button_id=487FTCX52P9WA">
+<a href="https://www.paypal.com/donate/?hosted_button_id=TLTPDERG5X4VA">
 	<img src="https://img.shields.io/badge/-Donate-black?style=for-the-badge&logo=paypal" alt="Donate">
 </a>
 
 ## Previews
 
-<img src="https://raw.githubusercontent.com/Domi04151309/AlwaysOn/main/fastlane/metadata/android/en-US/images/phoneScreenshots/1.jpg" width="18%" /><img src="https://raw.githubusercontent.com/Domi04151309/AlwaysOn/main/fastlane/metadata/android/en-US/images/phoneScreenshots/2.jpg" width="18%" /><img src="https://raw.githubusercontent.com/Domi04151309/AlwaysOn/main/fastlane/metadata/android/en-US/images/phoneScreenshots/3.jpg" width="18%" /><img src="https://raw.githubusercontent.com/Domi04151309/AlwaysOn/main/fastlane/metadata/android/en-US/images/phoneScreenshots/4.jpg" width="18%" /><img src="https://raw.githubusercontent.com/Domi04151309/AlwaysOn/main/fastlane/metadata/android/en-US/images/phoneScreenshots/5.jpg" width="18%" /><img src="https://raw.githubusercontent.com/Domi04151309/AlwaysOn/main/fastlane/metadata/android/en-US/images/phoneScreenshots/6.jpg" width="18%" /><img src="https://raw.githubusercontent.com/Domi04151309/AlwaysOn/main/fastlane/metadata/android/en-US/images/phoneScreenshots/7.jpg" width="18%" />
+<img src="https://raw.githubusercontent.com/Heitezy/PeekDisplay/main/fastlane/metadata/android/en-US/images/phoneScreenshots/1.jpg" width="18%" /><img src="https://raw.githubusercontent.com/Heitezy/PeekDisplay/main/fastlane/metadata/android/en-US/images/phoneScreenshots/2.jpg" width="18%" /><img src="https://raw.githubusercontent.com/Heitezy/PeekDisplay/main/fastlane/metadata/android/en-US/images/phoneScreenshots/3.jpg" width="18%" /><img src="https://raw.githubusercontent.com/Heitezy/PeekDisplay/main/fastlane/metadata/android/en-US/images/phoneScreenshots/4.jpg" width="18%" /><img src="https://raw.githubusercontent.com/Heitezy/PeekDisplay/main/fastlane/metadata/android/en-US/images/phoneScreenshots/5.jpg" width="18%" /><img src="https://raw.githubusercontent.com/Heitezy/PeekDisplay/main/fastlane/metadata/android/en-US/images/phoneScreenshots/6.jpg" width="18%" /><img src="https://raw.githubusercontent.com/Heitezy/PeekDisplay/main/fastlane/metadata/android/en-US/images/phoneScreenshots/7.jpg" width="18%" />
 
 <i style="color:gray;">Android, Google Play and the Google Play logo are trademarks of Google
 LLC.</i>
 
 ## Legal Notice
 
-Copyright (C) 2020 Domi04151309
+This project is a modified version of AlwaysOn by Domi04151309,
+licensed under the GNU General Public License v3.
+
+Copyright (C) 2025 Heitezy
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -45,5 +44,3 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <https://www.gnu.org/licenses/>.
-
-<a href="https://anvil-solutions.com/de/imprint">Impressum</a>
