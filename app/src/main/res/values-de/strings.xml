@@ -279,4 +279,6 @@
     <string name="pref_ao_lock_icon_summary">Ersetzen Sie das Fingerabdrucksymbol durch ein Schlossymbol</string>
     <string name="donate">Spenden</string>
     <string name="donate_summary">Unterstützen Sie die Entwicklung des Peek -Displays</string>
+    <string name="pref_look_and_feel_weather_unit">Imperiale Einheiten verwenden</string>
+    <string name="pref_look_and_feel_weather_unit_summary">Die Temperatur in Fahrenheit anzeigen</string>
 </resources>
