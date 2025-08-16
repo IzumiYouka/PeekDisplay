@@ -2,7 +2,10 @@ package heitezy.peekdisplay.activities
 
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.RelativeLayout
 import androidx.core.content.edit
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import heitezy.peekdisplay.R
@@ -84,6 +87,24 @@ class LAFAlwaysOnLookActivity : BaseActivity(), LayoutListAdapter.OnItemClickLis
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_layout_list)
+
+        // Handle window insets for the main container
+        val rootView = findViewById<RelativeLayout>(R.id.layout_list_activity)
+        ViewCompat.setOnApplyWindowInsetsListener(rootView) { view, windowInsets ->
+            val insets = windowInsets.getInsets(
+                WindowInsetsCompat.Type.systemBars() or
+                        WindowInsetsCompat.Type.displayCutout()
+            )
+
+            view.setPadding(
+                insets.left,
+                insets.top,
+                insets.right,
+                insets.bottom
+            )
+
+            WindowInsetsCompat.CONSUMED
+        }
 
         preview = findViewById(R.id.preview)
         layoutList = findViewById(R.id.layout_list)

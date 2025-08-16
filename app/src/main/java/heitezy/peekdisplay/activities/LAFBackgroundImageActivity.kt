@@ -1,23 +1,18 @@
 package heitezy.peekdisplay.activities
 
-import android.app.Activity
-import android.content.Intent
-import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
-import android.os.Build
 import android.os.Bundle
-import android.provider.MediaStore
 import android.util.Base64
 import android.widget.ImageView
-import android.widget.Toast
-import androidx.activity.result.ActivityResult
-import androidx.activity.result.ActivityResultCallback
+import android.widget.RelativeLayout
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.edit
 import androidx.core.graphics.scale
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import heitezy.peekdisplay.R
@@ -97,6 +92,24 @@ class LAFBackgroundImageActivity :
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_layout_list)
+
+        // Handle window insets for the main container
+        val rootView = findViewById<RelativeLayout>(R.id.layout_list_activity)
+        ViewCompat.setOnApplyWindowInsetsListener(rootView) { view, windowInsets ->
+            val insets = windowInsets.getInsets(
+                WindowInsetsCompat.Type.systemBars() or
+                        WindowInsetsCompat.Type.displayCutout()
+            )
+
+            view.setPadding(
+                insets.left,
+                insets.top,
+                insets.right,
+                insets.bottom
+            )
+
+            WindowInsetsCompat.CONSUMED
+        }
 
         preview = findViewById(R.id.preview)
         layoutList = findViewById(R.id.layout_list)

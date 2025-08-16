@@ -166,7 +166,7 @@ class AlwaysOn : OffActivity(), NotificationService.OnNotificationsChangedListen
         
         if (prefs.get(P.USER_THEME, P.USER_THEME_DEFAULT) == P.USER_THEME_SAMSUNG2) {
             val size = Point()
-            (getSystemService(Context.DISPLAY_SERVICE) as DisplayManager)
+            (getSystemService(DISPLAY_SERVICE) as DisplayManager)
                 .getDisplay(Display.DEFAULT_DISPLAY)
                 .getSize(size)
             offsetX = (size.x - size.x * prefs.displayScale()) * -HALF
@@ -210,7 +210,7 @@ class AlwaysOn : OffActivity(), NotificationService.OnNotificationsChangedListen
 
     private fun prepareMusicControls() {
         val mediaSessionManager =
-            getSystemService(Context.MEDIA_SESSION_SERVICE) as MediaSessionManager
+            getSystemService(MEDIA_SESSION_SERVICE) as MediaSessionManager
         val notificationListener =
             ComponentName(applicationContext, NotificationService::class.java.name)
         onActiveSessionsChangedListener =
@@ -286,13 +286,13 @@ class AlwaysOn : OffActivity(), NotificationService.OnNotificationsChangedListen
     }
 
     private fun prepareProximity() {
-        sensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
+        sensorManager = getSystemService(SENSOR_SERVICE) as SensorManager
         sensorEventListener = AlwaysOnSensorEventListener(viewHolder)
     }
 
     private fun prepareDoNotDisturb() {
         notificationManager =
-            getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+            getSystemService(NOTIFICATION_SERVICE) as NotificationManager
         notificationAccess = notificationManager?.isNotificationPolicyAccessGranted ?: false
         if (notificationAccess) {
             userDND = notificationManager?.currentInterruptionFilter
@@ -333,7 +333,7 @@ class AlwaysOn : OffActivity(), NotificationService.OnNotificationsChangedListen
                 val duration = prefs.get(P.VIBRATION_DURATION, P.VIBRATION_DURATION_DEFAULT).toLong()
                 if (duration > 0) {
                     val vibrator =
-                        getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
+                        getSystemService(VIBRATOR_SERVICE) as Vibrator
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                         vibrator.vibrate(
                             VibrationEffect.createOneShot(
@@ -387,7 +387,7 @@ class AlwaysOn : OffActivity(), NotificationService.OnNotificationsChangedListen
         instance = this
 
         prefs = P(getDefaultSharedPreferences(this))
-        userPowerSaving = (getSystemService(Context.POWER_SERVICE) as PowerManager).isPowerSaveMode
+        userPowerSaving = (getSystemService(POWER_SERVICE) as PowerManager).isPowerSaveMode
 
         prepareView()
 
@@ -447,7 +447,7 @@ class AlwaysOn : OffActivity(), NotificationService.OnNotificationsChangedListen
 
         // Broadcast Receivers
         if (Build.VERSION.SDK_INT >= 34) { // Android 14 (UPSIDE_DOWN_CAKE)
-            registerReceiver(systemReceiver, systemFilter, Context.RECEIVER_NOT_EXPORTED)
+            registerReceiver(systemReceiver, systemFilter, RECEIVER_NOT_EXPORTED)
         } else {
             registerReceiver(systemReceiver, systemFilter)
         }
@@ -626,7 +626,7 @@ class AlwaysOn : OffActivity(), NotificationService.OnNotificationsChangedListen
         if (onActiveSessionsChangedListener != null) {
             try {
                 val mediaSessionManager =
-                    getSystemService(Context.MEDIA_SESSION_SERVICE) as MediaSessionManager
+                    getSystemService(MEDIA_SESSION_SERVICE) as MediaSessionManager
                 mediaSessionManager.removeOnActiveSessionsChangedListener(
                     onActiveSessionsChangedListener ?: return
                 )
@@ -653,7 +653,7 @@ class AlwaysOn : OffActivity(), NotificationService.OnNotificationsChangedListen
         
         // If keyboard is showing and we're in reply mode, hide keyboard when a new notification arrives
         if (NotificationPreview.isReplyActive()) {
-            val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
             viewHolder.customView.windowToken?.let { token ->
                 imm.hideSoftInputFromWindow(token, 0)
             }

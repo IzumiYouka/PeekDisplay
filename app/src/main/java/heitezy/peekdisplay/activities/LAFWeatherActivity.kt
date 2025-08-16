@@ -3,8 +3,11 @@ package heitezy.peekdisplay.activities
 import android.content.Intent
 import android.os.Bundle
 import android.widget.EditText
+import android.widget.FrameLayout
 import androidx.core.content.edit
 import androidx.core.net.toUri
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import androidx.preference.Preference
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import heitezy.peekdisplay.R
@@ -15,6 +18,25 @@ class LAFWeatherActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
+
+        // Handle window insets for the main container
+        val rootView = findViewById<FrameLayout>(R.id.settings)
+        ViewCompat.setOnApplyWindowInsetsListener(rootView) { view, windowInsets ->
+            val insets = windowInsets.getInsets(
+                WindowInsetsCompat.Type.systemBars() or
+                        WindowInsetsCompat.Type.displayCutout()
+            )
+
+            view.setPadding(
+                insets.left,
+                insets.top,
+                insets.right,
+                insets.bottom
+            )
+
+            WindowInsetsCompat.CONSUMED
+        }
+
         supportFragmentManager
             .beginTransaction()
             .replace(R.id.settings, PreferenceFragment())
