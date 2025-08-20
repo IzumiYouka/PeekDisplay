@@ -71,9 +71,9 @@ class AlwaysOn : OffActivity(), NotificationService.OnNotificationsChangedListen
     // Media Controls
     private var onActiveSessionsChangedListener: AlwaysOnOnActiveSessionsChangedListener? = null
 
-    // Notifications
-    @JvmField
-    internal var notificationAvailable: Boolean = false
+    // Edge glow tracking
+    private var initialNotificationCount: Int = 0
+    private var lastNotificationCount: Int = 0
 
     // Battery saver
     private var userPowerSaving: Boolean = false
@@ -323,8 +323,8 @@ class AlwaysOn : OffActivity(), NotificationService.OnNotificationsChangedListen
             )
             edgeGlowThread = EdgeGlowThread(this, viewHolder.frame.background as TransitionDrawable)
             edgeGlowThread.start()
-            // Initialize the edge glow thread state with current notification count
-            edgeGlowThread.notificationAvailable = NotificationService.count > 0
+            // Initialize the edge glow thread state - only trigger for new notifications
+            edgeGlowThread.shouldTriggerGlow = true
         }
     }
 
@@ -464,6 +464,11 @@ class AlwaysOn : OffActivity(), NotificationService.OnNotificationsChangedListen
         super.onStart()
         CombinedServiceReceiver.isAlwaysOnRunning = true
         servicesRunning = true
+        
+        // Record initial notification count for edge glow tracking
+        initialNotificationCount = NotificationService.count
+        lastNotificationCount = NotificationService.count
+        
         if (prefs.get(P.SHOW_CLOCK, P.SHOW_CLOCK_DEFAULT) ||
             prefs.get(
                 P.SHOW_DATE,
@@ -605,7 +610,11 @@ class AlwaysOn : OffActivity(), NotificationService.OnNotificationsChangedListen
         // Clear any album art to avoid memory leaks
         viewHolder.customView.setAlbumArt(null)
         
-        if (prefs.get(P.EDGE_GLOW, P.EDGE_GLOW_DEFAULT)) edgeGlowThread.interrupt()
+        // Reset and stop edge glow thread
+        if (prefs.get(P.EDGE_GLOW, P.EDGE_GLOW_DEFAULT)) {
+            edgeGlowThread.reset()
+            edgeGlowThread.interrupt()
+        }
         animationThread.interrupt()
         timeoutRunnable = null
         
@@ -639,6 +648,10 @@ class AlwaysOn : OffActivity(), NotificationService.OnNotificationsChangedListen
 
     override fun finishAndOff() {
         CombinedServiceReceiver.hasRequestedStop = true
+        // Reset edge glow state before finishing
+        if (prefs.get(P.EDGE_GLOW, P.EDGE_GLOW_DEFAULT)) {
+            edgeGlowThread.reset()
+        }
         super.finishAndOff()
     }
 
@@ -661,9 +674,17 @@ class AlwaysOn : OffActivity(), NotificationService.OnNotificationsChangedListen
         
         viewHolder.customView.notifyNotificationDataChanged()
         if (prefs.get(P.EDGE_GLOW, P.EDGE_GLOW_DEFAULT)) {
-            val hasNotifications = NotificationService.count > 0
-            edgeGlowThread.notificationAvailable = hasNotifications
-            notificationAvailable = hasNotifications
+            // Check if notification count has changed
+            if (NotificationService.count > lastNotificationCount) {
+                // New notification received while AlwaysOn is active
+                edgeGlowThread.hasNewNotifications = true
+            } else if (NotificationService.count < lastNotificationCount) {
+                // Notification count decreased - stop edge glow
+                edgeGlowThread.hasNewNotifications = false
+            }
+            
+            // Update the last count for next comparison
+            lastNotificationCount = NotificationService.count
         }
     }
 

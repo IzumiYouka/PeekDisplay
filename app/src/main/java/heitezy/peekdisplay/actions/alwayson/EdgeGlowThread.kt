@@ -13,7 +13,11 @@ class EdgeGlowThread(
 ) : Thread() {
     @JvmField
     @Volatile
-    internal var notificationAvailable: Boolean = false
+    internal var shouldTriggerGlow: Boolean = false
+    
+    @JvmField
+    @Volatile
+    internal var hasNewNotifications: Boolean = false
 
     override fun run() {
         val transitionTime =
@@ -28,7 +32,7 @@ class EdgeGlowThread(
             )
         try {
             while (!isInterrupted) {
-                if (notificationAvailable) {
+                if (shouldTriggerGlow && hasNewNotifications) {
                     activity.runOnUiThread { background?.startTransition(transitionTime) }
                     sleep(transitionTime.toLong())
                     activity.runOnUiThread {
@@ -42,5 +46,10 @@ class EdgeGlowThread(
         } catch (exception: InterruptedException) {
             Log.w(Global.LOG_TAG, exception.toString())
         }
+    }
+    
+    fun reset() {
+        hasNewNotifications = false
+        shouldTriggerGlow = false
     }
 }
