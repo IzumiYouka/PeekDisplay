@@ -324,6 +324,8 @@ class AlwaysOn : OffActivity(), NotificationService.OnNotificationsChangedListen
             )
             edgeGlowThread = EdgeGlowThread(this, viewHolder.frame.background as TransitionDrawable)
             edgeGlowThread.start()
+            // Initialize the edge glow thread state with current notification count
+            edgeGlowThread.notificationAvailable = NotificationService.count > 0
         }
     }
 
@@ -667,7 +669,9 @@ class AlwaysOn : OffActivity(), NotificationService.OnNotificationsChangedListen
         
         viewHolder.customView.notifyNotificationDataChanged()
         if (prefs.get(P.EDGE_GLOW, P.EDGE_GLOW_DEFAULT)) {
-            notificationAvailable = NotificationService.count > 0
+            val hasNotifications = NotificationService.count > 0
+            edgeGlowThread.notificationAvailable = hasNotifications
+            notificationAvailable = hasNotifications
         }
     }
 

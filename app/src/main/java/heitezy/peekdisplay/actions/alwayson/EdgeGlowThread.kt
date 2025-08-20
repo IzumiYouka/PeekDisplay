@@ -12,6 +12,7 @@ class EdgeGlowThread(
     private val background: TransitionDrawable?,
 ) : Thread() {
     @JvmField
+    @Volatile
     internal var notificationAvailable: Boolean = false
 
     override fun run() {
