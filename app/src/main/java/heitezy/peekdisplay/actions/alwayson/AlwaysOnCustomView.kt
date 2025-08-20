@@ -62,6 +62,7 @@ class AlwaysOnCustomView : View {
     private var events = listOf<String>()
     private var weather = ""
     private var albumArt: Bitmap? = null
+    private var isAlbumArtOverlayVisible: Boolean = false
     private var alwaysOnActivity: Activity? = null
     private var isFingerprintTouched = false
     private var lastTouchedX = 0f
@@ -431,7 +432,7 @@ class AlwaysOnCustomView : View {
         prepareDrawing()
 
         // Regular background if not showing album art
-        if (customBackground != null) {
+        if (customBackground != null && !isAlbumArtOverlayVisible) {
             canvas.drawBitmap(
                 customBackground ?: error("Impossible state."),
                 0F,
@@ -1164,11 +1165,11 @@ class AlwaysOnCustomView : View {
 
     // Method to check album art state and notify the activity
     private fun checkAlbumArtState() {
-        val shouldShowAlbumArt = albumArt != null && 
-                             musicVisible && 
+        val shouldShowAlbumArt = albumArt != null &&
+                             musicVisible &&
                              utils.prefs.get(P.SHOW_MUSIC_CONTROLS, P.SHOW_MUSIC_CONTROLS_DEFAULT) &&
                              utils.prefs.get(P.SHOW_ALBUM_ART, P.SHOW_ALBUM_ART_DEFAULT)
-                             
+        isAlbumArtOverlayVisible = shouldShowAlbumArt
         onAlbumArtStateChanged(shouldShowAlbumArt, albumArt)
     }
 

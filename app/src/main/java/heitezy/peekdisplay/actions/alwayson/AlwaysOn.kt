@@ -141,7 +141,6 @@ class AlwaysOn : OffActivity(), NotificationService.OnNotificationsChangedListen
             }
         }
 
-    private var previousBackgroundImage: String? = null
 
     private fun prepareView() {
         // Cutouts
@@ -603,13 +602,6 @@ class AlwaysOn : OffActivity(), NotificationService.OnNotificationsChangedListen
         instance = null
         CombinedServiceReceiver.isAlwaysOnRunning = false
         
-        // Restore background image setting if needed before destroying
-        if (previousBackgroundImage != null && previousBackgroundImage != P.BACKGROUND_IMAGE_NONE) {
-            getDefaultSharedPreferences(this).edit()
-                .putString(P.BACKGROUND_IMAGE, previousBackgroundImage)
-                .apply()
-        }
-        
         // Clear any album art to avoid memory leaks
         viewHolder.customView.setAlbumArt(null)
         
@@ -685,20 +677,6 @@ class AlwaysOn : OffActivity(), NotificationService.OnNotificationsChangedListen
 
     private fun handleAlbumArtDisplay(shouldShow: Boolean, albumArt: Bitmap?) {
         if (shouldShow && albumArt != null) {
-            // Save current background image setting if we haven't already
-            if (previousBackgroundImage == null) {
-                previousBackgroundImage = prefs.get(P.BACKGROUND_IMAGE, P.BACKGROUND_IMAGE_DEFAULT)
-                // Set background image to none while showing album art
-                if (previousBackgroundImage != P.BACKGROUND_IMAGE_NONE) {
-                    getDefaultSharedPreferences(this).edit()
-                        .putString(P.BACKGROUND_IMAGE, P.BACKGROUND_IMAGE_NONE)
-                        .apply()
-                    
-                    // Force background refresh in the custom view
-                    viewHolder.customView.refreshBackground()
-                }
-            }
-
             // Check if we already have an album art overlay view
             var albumArtView = findViewById<ImageView>(R.id.album_art_overlay)
             
@@ -773,17 +751,6 @@ class AlwaysOn : OffActivity(), NotificationService.OnNotificationsChangedListen
         } else {
             // Hide the album art view if it exists
             findViewById<ImageView>(R.id.album_art_overlay)?.visibility = View.GONE
-            
-            // Restore previous background image setting if we had saved one
-            if (previousBackgroundImage != null && previousBackgroundImage != P.BACKGROUND_IMAGE_NONE) {
-                getDefaultSharedPreferences(this).edit()
-                    .putString(P.BACKGROUND_IMAGE, previousBackgroundImage)
-                    .apply()
-                previousBackgroundImage = null
-                
-                // Force background refresh in the custom view
-                viewHolder.customView.refreshBackground()
-            }
         }
     }
 
