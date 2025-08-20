@@ -279,4 +279,6 @@
     <string name="pref_ao_lock_icon_summary">استبدل أيقونة بصمات الأصابع برمز قفل</string>
     <string name="donate">يتبرع</string>
     <string name="donate_summary">دعم تطوير عرض نظرة خاطفة</string>
+    <string name="pref_look_and_feel_weather_unit">استخدام الوحدات الإمبراطورية</string>
+    <string name="pref_look_and_feel_weather_unit_summary">عرض درجة الحرارة في فهرنهايت</string>
 </resources>

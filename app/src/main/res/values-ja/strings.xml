@@ -279,4 +279,6 @@
     <string name="pref_ao_lock_icon_summary">指紋アイコンをロックアイコンに置き換えます</string>
     <string name="donate">寄付する</string>
     <string name="donate_summary">Peekディスプレイの開発をサポートします</string>
+    <string name="pref_look_and_feel_weather_unit">帝国ユニットを使用します</string>
+    <string name="pref_look_and_feel_weather_unit_summary">華氏の温度を表示します</string>
 </resources>

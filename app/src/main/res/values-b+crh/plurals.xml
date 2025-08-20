@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
     <plurals name="pref_look_and_feel_rules_timeout_summary">
-        <item quantity="one">Сонъундан сонъ . %d экинджи</item>
-        <item quantity="other">Сонъундан сонъ . %d самоп</item>
+        <item quantity="one">%d saniyede toqtamaq</item>
+        <item quantity="other">%d saniyede toqtamaq</item>
     </plurals>
 </resources>

@@ -279,4 +279,6 @@
     <string name="pref_ao_lock_icon_summary">Substitua o ícone de impressão digital por um ícone de bloqueio</string>
     <string name="donate">Doar</string>
     <string name="donate_summary">Apoie o desenvolvimento da exibição de Peek</string>
+    <string name="pref_look_and_feel_weather_unit">Use unidades imperiais</string>
+    <string name="pref_look_and_feel_weather_unit_summary">Exibir a temperatura em Fahrenheit</string>
 </resources>

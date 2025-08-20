@@ -279,4 +279,6 @@
     <string name="pref_ao_lock_icon_summary">Reemplace el icono de huellas digitales con un icono de bloqueo</string>
     <string name="donate">Donar</string>
     <string name="donate_summary">Apoyar el desarrollo de la pantalla PEEK</string>
+    <string name="pref_look_and_feel_weather_unit">Use unidades imperiales</string>
+    <string name="pref_look_and_feel_weather_unit_summary">Muestra la temperatura en Fahrenheit</string>
 </resources>

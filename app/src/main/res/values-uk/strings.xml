@@ -167,7 +167,7 @@
     <string name="pref_look_and_feel_colors_weather">Колір погоди</string>
     <string name="pref_look_and_feel_colors_notification">Колір сповіщень</string>
     <string name="pref_look_and_feel_colors_fingerprint">Колір значка відбитка пальця</string>
-    <string name="pref_ao_showClock">Відображати часу</string>
+    <string name="pref_ao_showClock">Відображати час</string>
     <string name="pref_ao_showDate">Відображати дату</string>
     <string name="pref_ao_showBatteryIcn">Відображати значок батареї</string>
     <string name="pref_ao_showBattery">Відображати відсотка заряду батареї</string>
@@ -279,4 +279,6 @@
     <string name="pref_ao_lock_icon_summary">Замінити іконку відбитку пальця на іконку блокування</string>
     <string name="donate">Підтримати</string>
     <string name="donate_summary">Підтримайте розробку Peek Display</string>
+    <string name="pref_look_and_feel_weather_unit">Використовувати імперські одиниці</string>
+    <string name="pref_look_and_feel_weather_unit_summary">Відображати температуру у градусах Фаренгейта</string>
 </resources>

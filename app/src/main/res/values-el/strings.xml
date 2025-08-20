@@ -279,4 +279,6 @@
     <string name="pref_ao_lock_icon_summary">Αντικαταστήστε το εικονίδιο δακτυλικών αποτυπωμάτων με ένα εικονίδιο κλειδώματος</string>
     <string name="donate">Προσφέρω</string>
     <string name="donate_summary">Υποστήριξη της ανάπτυξης της εμφάνισης PEEK</string>
+    <string name="pref_look_and_feel_weather_unit">Χρησιμοποιήστε αυτοκρατορικές μονάδες</string>
+    <string name="pref_look_and_feel_weather_unit_summary">Εμφάνιση της θερμοκρασίας στο Fahrenheit</string>
 </resources>
