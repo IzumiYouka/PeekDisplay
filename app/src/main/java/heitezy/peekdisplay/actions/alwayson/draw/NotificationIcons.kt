@@ -1,11 +1,9 @@
 package heitezy.peekdisplay.actions.alwayson.draw
 
 import android.graphics.Canvas
-import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.Paint.Style
 import android.graphics.Rect
-import android.graphics.drawable.Drawable
 import android.util.Log
 import androidx.core.content.ContextCompat
 import heitezy.peekdisplay.R
@@ -36,7 +34,12 @@ object NotificationIcons {
 
     // Get icon spacing based on interactive mode
     private fun getIconSpacing(utils: Utils): Float {
-        return if (utils.prefs.get(P.INTERACTIVE_NOTIFICATION_ICONS, P.INTERACTIVE_NOTIFICATION_ICONS_DEFAULT)) {
+        return if (utils.prefs.get(P.INTERACTIVE_NOTIFICATION_ICONS, P.INTERACTIVE_NOTIFICATION_ICONS_DEFAULT) ||
+            utils.prefs.get(P.SWIPE_NOTIFICATION_OPEN, P.SWIPE_NOTIFICATION_OPEN_DEFAULT)) {
+            ICON_SPACING_INTERACTIVE
+        } else if (!utils.prefs.get(P.INTERACTIVE_NOTIFICATION_ICONS, P.INTERACTIVE_NOTIFICATION_ICONS_DEFAULT) &&
+            !utils.prefs.get(P.SWIPE_NOTIFICATION_OPEN, P.SWIPE_NOTIFICATION_OPEN_DEFAULT) &&
+            utils.prefs.get(P.INVERT_INTERACTION_HIGHLIGHT, P.INVERT_INTERACTION_HIGHLIGHT_DEFAULT)) {
             ICON_SPACING_INTERACTIVE
         } else {
             ICON_SPACING_REGULAR
