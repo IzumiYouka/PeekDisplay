@@ -3,6 +3,7 @@ package heitezy.peekdisplay.actions.alwayson.draw
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
+import java.text.SimpleDateFormat
 import heitezy.peekdisplay.R
 import heitezy.peekdisplay.actions.alwayson.AlwaysOnCustomView
 import heitezy.peekdisplay.helpers.P
@@ -37,6 +38,8 @@ object ThemeSpecials {
         flags: BooleanArray,
         width: Int,
         batteryPercent: Int,
+        timeFormat: SimpleDateFormat,
+        dateFormat: SimpleDateFormat,
     ) {
         if (flags[AlwaysOnCustomView.FLAG_MOTO] && (
                 utils.prefs.get(
@@ -47,27 +50,108 @@ object ThemeSpecials {
         ) {
             // M-Style: Draw circular progress, time, date, and battery percent in the center
             val centerX = width / 2f
-            val radius = width * 0.3f
+            val defaultRadius = width * 0.3f
             val strokeWidth = utils.dpToPx(4f)
+
+            val showClock = utils.prefs.get(P.SHOW_CLOCK, P.SHOW_CLOCK_DEFAULT)
+            val showDate = utils.prefs.get(P.SHOW_DATE, P.SHOW_DATE_DEFAULT)
+            val showBatteryPercentage = utils.prefs.get(P.SHOW_BATTERY_PERCENTAGE, P.SHOW_BATTERY_PERCENTAGE_DEFAULT)
+            val showBatteryCircle = utils.prefs.get(P.SHOW_BATTERY_ICON, P.SHOW_BATTERY_ICON_DEFAULT)
+
+            val timeHeight = if (showClock) utils.getTextHeight(utils.bigTextSize) else 0f
+            val dateHeight = if (showDate) utils.getTextHeight(utils.smallTextSize) else 0f
+            val batteryTextHeight = if (showBatteryPercentage) utils.getTextHeight(utils.mediumTextSize) else 0f
+
+            // Compute minimal radius to fit enabled texts inside inner circle area
+            val radius = if (!showClock && !showDate && !showBatteryPercentage) {
+                defaultRadius
+            } else {
+                val needed = (timeHeight / 2f) + (strokeWidth / 2f) + maxOf(dateHeight, batteryTextHeight, 0f)
+                maxOf(defaultRadius, needed)
+            }
+
             val angle = 340f * batteryPercent / 100f
 
-            // Draw background circle
-            val bgPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-                style = Paint.Style.STROKE
-                color = 0x33FFFFFF
-                this.strokeWidth = strokeWidth
-            }
-            val oval = android.graphics.RectF(centerX - radius, strokeWidth / 2 + utils.topPadding, centerX + radius, radius * 2 + strokeWidth / 2 + utils.topPadding)
-            canvas.drawArc(oval, -260f, 80f, false, bgPaint)
+            if (showBatteryCircle) {
+                // Draw background circle
+                val bgPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
+                    style = Paint.Style.STROKE
+                    color = 0x33FFFFFF
+                    this.strokeWidth = strokeWidth
+                }
+                val oval = android.graphics.RectF(
+                    centerX - radius,
+                    strokeWidth / 2 + utils.topPadding,
+                    centerX + radius,
+                    radius * 2 + strokeWidth / 2 + utils.topPadding
+                )
+                canvas.drawArc(oval, -260f, 80f, false, bgPaint)
 
-            // Draw progress arc
-            val arcPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-                style = Paint.Style.STROKE
-                color = 0xFF00E5FF.toInt()
-                this.strokeWidth = strokeWidth
-                strokeCap = Paint.Cap.ROUND
+                // Draw progress arc
+                val arcPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
+                    style = Paint.Style.STROKE
+                    color = 0xFF00E5FF.toInt()
+                    this.strokeWidth = strokeWidth
+                    strokeCap = Paint.Cap.ROUND
+                }
+                canvas.drawArc(oval, -260f, angle, false, arcPaint)
             }
-            canvas.drawArc(oval, -260f, angle, false, arcPaint)
+
+            val centerY = utils.topPadding + strokeWidth / 2f + radius
+
+            // Draw time centered vertically inside the circle (if enabled)
+            if (showClock) {
+                val timePaint = utils.getPaint(
+                    utils.bigTextSize,
+                    utils.prefs.get(P.DISPLAY_COLOR_CLOCK, P.DISPLAY_COLOR_CLOCK_DEFAULT),
+                )
+                val timeBaseline = centerY - (timePaint.ascent() + timePaint.descent()) / 2f
+                canvas.drawText(
+                    timeFormat.format(System.currentTimeMillis()),
+                    centerX,
+                    timeBaseline,
+                    timePaint,
+                )
+            }
+
+            // Inner area bounds (exclude stroke width)
+            val innerTop = utils.topPadding + strokeWidth
+            val innerBottom = utils.topPadding + 2f * radius
+            val halfTimeHeight = timeHeight / 2f
+
+            // Draw date using smallTextSize, vertically centered in the upper band (if enabled)
+            if (showDate) {
+                val datePaint = utils.getPaint(
+                    utils.smallTextSize,
+                    utils.prefs.get(P.DISPLAY_COLOR_DATE, P.DISPLAY_COLOR_DATE_DEFAULT),
+                )
+                val upperBandCenter = (innerTop + (centerY - halfTimeHeight)) / 2f
+                val dateBaseline = upperBandCenter - (datePaint.ascent() + datePaint.descent()) / 2f
+                val dateText = dateFormat.format(System.currentTimeMillis())
+                canvas.drawText(
+                    dateText,
+                    centerX,
+                    dateBaseline + strokeWidth,
+                    datePaint,
+                )
+            }
+
+            // Draw battery percentage text, vertically centered in the lower band (if enabled)
+            if (showBatteryPercentage) {
+                val battPaint = utils.getPaint(
+                    utils.mediumTextSize,
+                    utils.prefs.get(P.DISPLAY_COLOR_BATTERY, P.DISPLAY_COLOR_BATTERY_DEFAULT),
+                )
+                val lowerBandCenter = ((centerY + halfTimeHeight) + innerBottom) / 2f
+                val battBaseline = lowerBandCenter - (battPaint.ascent() + battPaint.descent()) / 2f
+                val percentText = "$batteryPercent%"
+                canvas.drawText(
+                    percentText,
+                    centerX,
+                    battBaseline,
+                    battPaint,
+                )
+            }
 
             // Draw lightning icon at the bottom (placeholder)
             utils.drawVector(canvas,
@@ -76,6 +160,9 @@ object ThemeSpecials {
                 (radius * 2).toInt() + utils.topPadding,
                 0xFFFFFFFF.toInt(),
             )
+
+            // Advance viewHeight to prevent overlap
+            utils.viewHeight = utils.topPadding + 2f * radius + strokeWidth + utils.padding16
         }
     }
 }

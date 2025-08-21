@@ -46,7 +46,7 @@
         android:title="@string/pref_ao_date_format"
         android:dependency="ao_date" />
     <SwitchPreference
-        android:defaultValue="false"
+        android:defaultValue="true"
         android:icon="@drawable/ic_battery"
         android:key="ao_batteryIcn"
         android:summaryOff="@string/pref_disabled"

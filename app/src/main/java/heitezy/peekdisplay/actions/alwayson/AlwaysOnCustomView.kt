@@ -449,38 +449,37 @@ class AlwaysOnCustomView : View {
         }
 
         // Date
-        if (utils.prefs.get(P.SHOW_DATE, P.SHOW_DATE_DEFAULT)) {
+        if (utils.prefs.get(P.SHOW_DATE, P.SHOW_DATE_DEFAULT) && !flags[FLAG_MOTO]) {
             Date.draw(canvas, utils, flags, tempHeight, dateFormat, width)
-        }
-
-        // Moto Clock
-        if (utils.prefs.get(P.SHOW_CLOCK, P.SHOW_CLOCK_DEFAULT) && flags[FLAG_MOTO]) {
-            Clock.draw(canvas, utils, flags, timeFormat, width)
         }
 
         // Samsung 3 divider
         ThemeSpecials.drawDivider(canvas, utils, flags, tempHeight)
 
-        // Moto Battery Circle
-        ThemeSpecials.drawBatteryCircle(canvas, utils, flags, width, batteryLevel)
+        // Moto Battery Circle draws time/date/battery percentage inside
+        if (flags[FLAG_MOTO]) {
+            ThemeSpecials.drawBatteryCircle(canvas, utils, flags, width, batteryLevel, timeFormat, dateFormat)
+        }
 
         // Battery
-        if (utils.prefs.get(P.SHOW_BATTERY_ICON, P.SHOW_BATTERY_ICON_DEFAULT) &&
-            utils.prefs.get(P.SHOW_BATTERY_PERCENTAGE, P.SHOW_BATTERY_PERCENTAGE_DEFAULT)
-        ) {
-            Battery.drawIconAndPercentage(
-                canvas,
-                utils,
-                batteryIcon,
-                batteryLevel,
-                batteryIsCharging,
-                flags,
-                width,
-            )
-        } else if (utils.prefs.get(P.SHOW_BATTERY_ICON, P.SHOW_BATTERY_ICON_DEFAULT)) {
-            Battery.drawIcon(canvas, utils, batteryIcon, batteryIsCharging, flags, width)
-        } else if (utils.prefs.get(P.SHOW_BATTERY_PERCENTAGE, P.SHOW_BATTERY_PERCENTAGE_DEFAULT)) {
-            Battery.drawPercentage(canvas, utils, batteryLevel, flags, width)
+        if (!flags[FLAG_MOTO]) {
+            if (utils.prefs.get(P.SHOW_BATTERY_ICON, P.SHOW_BATTERY_ICON_DEFAULT) &&
+                utils.prefs.get(P.SHOW_BATTERY_PERCENTAGE, P.SHOW_BATTERY_PERCENTAGE_DEFAULT)
+            ) {
+                Battery.drawIconAndPercentage(
+                    canvas,
+                    utils,
+                    batteryIcon,
+                    batteryLevel,
+                    batteryIsCharging,
+                    flags,
+                    width,
+                )
+            } else if (utils.prefs.get(P.SHOW_BATTERY_ICON, P.SHOW_BATTERY_ICON_DEFAULT)) {
+                Battery.drawIcon(canvas, utils, batteryIcon, batteryIsCharging, flags, width)
+            } else if (utils.prefs.get(P.SHOW_BATTERY_PERCENTAGE, P.SHOW_BATTERY_PERCENTAGE_DEFAULT)) {
+                Battery.drawPercentage(canvas, utils, batteryLevel, flags, width)
+            }
         }
 
         // Music Controls
