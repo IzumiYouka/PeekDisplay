@@ -101,7 +101,7 @@
         android:summaryOn="@string/pref_enabled"
         android:title="@string/pref_ao_showNotifications" />
     <SwitchPreference
-        android:defaultValue="false"
+        android:defaultValue="true"
         android:icon="@drawable/ic_notification"
         android:key="ao_notification_icons"
         android:summaryOff="@string/pref_disabled"
@@ -120,7 +120,7 @@
         android:key="ao_invert_interaction_highlight"
         android:summary="@string/pref_ao_invert_interaction_highlight_summary"
         android:title="@string/pref_ao_invert_interaction_highlight"
-        android:dependency="ao_interactive_notification_icons" />
+        android:dependency="ao_notification_icons" />
     <SwitchPreference
         android:defaultValue="false"
         android:icon="@drawable/ic_palette"

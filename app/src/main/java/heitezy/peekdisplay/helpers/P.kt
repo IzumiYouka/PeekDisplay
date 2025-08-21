@@ -213,7 +213,7 @@ internal class P(private val prefs: SharedPreferences) {
         const val USER_THEME_DEFAULT = USER_THEME_MOTO
         const val SHOW_CLOCK_DEFAULT = true
         const val SHOW_DATE_DEFAULT = true
-        const val SHOW_BATTERY_ICON_DEFAULT = false
+        const val SHOW_BATTERY_ICON_DEFAULT = true
         const val SHOW_BATTERY_PERCENTAGE_DEFAULT = true
         const val SHOW_CALENDAR_DEFAULT = false
         const val SHOW_NOTIFICATION_COUNT_DEFAULT = false
@@ -232,7 +232,7 @@ internal class P(private val prefs: SharedPreferences) {
         const val DISABLE_HEADS_UP_NOTIFICATIONS_DEFAULT = false
         const val USE_12_HOUR_CLOCK_DEFAULT = false
         const val SHOW_AM_PM_DEFAULT = false
-        const val DATE_FORMAT_DEFAULT = "EEE, MMMM d"
+        const val DATE_FORMAT_DEFAULT = "EEE, MMM d"
         const val FORCE_BRIGHTNESS_DEFAULT = false
         const val DISABLE_DOUBLE_TAP_DEFAULT = false
         const val SHOW_MUSIC_CONTROLS_DEFAULT = false
