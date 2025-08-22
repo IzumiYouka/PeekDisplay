@@ -1,5 +1,6 @@
 package heitezy.peekdisplay.actions.alwayson.draw
 
+import android.content.res.Configuration
 import android.graphics.Canvas
 import android.graphics.Paint
 import android.graphics.Paint.Style
@@ -21,6 +22,16 @@ object NotificationIcons {
             else -> 10 // Default fallback
         }
     }
+    
+    private fun getNotificationColumnLength(utils: Utils): Int {
+        return when {
+            utils.drawableSize == utils.dpToPx(Utils.DRAWABLE_SIZE_SMALL).toInt() -> 8
+            utils.drawableSize == utils.dpToPx(Utils.DRAWABLE_SIZE).toInt() -> 6
+            utils.drawableSize == utils.dpToPx(Utils.DRAWABLE_SIZE_ENLARGED).toInt() -> 5
+            else -> 6 // Default fallback
+        }
+    }
+    
     private const val NOTIFICATION_LIMIT: Int = 20
     private const val ICON_SPACING_INTERACTIVE: Float = 0.8f
     private const val ICON_SPACING_REGULAR: Float = 0.3f
@@ -52,7 +63,8 @@ object NotificationIcons {
         x: Int,
         index: Int,
         isFingerprintTouched: Boolean,
-        touchedNotificationIndex: Int?
+        touchedNotificationIndex: Int?,
+        isLandscape: Boolean
     ) {
         val notificationEntry = NotificationService.notifications[index]
 
@@ -86,20 +98,34 @@ object NotificationIcons {
             var right: Int
             var bottom: Int
             
-            if (utils.paint.textAlign == Paint.Align.LEFT) {
-                left = x + (utils.drawableSize + spacing) * (index % getNotificationRowLength(utils))
-                top = utils.viewHeight.toInt() - utils.drawableSize / 2 +
-                        index / getNotificationRowLength(utils) * (utils.drawableSize + spacing)
+            if (isLandscape) {
+                // Landscape: columns on the right side
+                val columnLength = getNotificationColumnLength(utils)
+                val columnIndex = index / columnLength
+                val rowIndex = index % columnLength
+                val rightMargin = utils.prefs.get(P.NOTIFICATION_ICON_TOP_PADDING, P.NOTIFICATION_ICON_TOP_PADDING_DEFAULT)
+                val startX = x - rightMargin
+                
+                left = startX - columnIndex * (utils.drawableSize + spacing)
+                top = utils.drawableSize / 2 + rowIndex * (utils.drawableSize + spacing)
                 right = left + utils.drawableSize
                 bottom = top + utils.drawableSize
             } else {
-                left = x - utils.drawableSize / 2 + (utils.drawableSize + spacing) * (index % getNotificationRowLength(utils))
-                top = utils.viewHeight.toInt() - utils.drawableSize / 2 +
-                        index / getNotificationRowLength(utils) * (utils.drawableSize + spacing)
-                right = left + utils.drawableSize
-                bottom = top + utils.drawableSize
+                // Portrait: row-based layout
+                if (utils.paint.textAlign == Paint.Align.LEFT) {
+                    left = x + (utils.drawableSize + spacing) * (index % getNotificationRowLength(utils))
+                    top = utils.viewHeight.toInt() - utils.drawableSize / 2 +
+                            index / getNotificationRowLength(utils) * (utils.drawableSize + spacing)
+                    right = left + utils.drawableSize
+                    bottom = top + utils.drawableSize
+                } else {
+                    left = x - utils.drawableSize / 2 + (utils.drawableSize + spacing) * (index % getNotificationRowLength(utils))
+                    top = utils.viewHeight.toInt() - utils.drawableSize / 2 +
+                            index / getNotificationRowLength(utils) * (utils.drawableSize + spacing)
+                    right = left + utils.drawableSize
+                    bottom = top + utils.drawableSize
+                }
             }
-
 
             val highlightRect = Rect(
                 left - padding,
@@ -199,9 +225,13 @@ object NotificationIcons {
     ) {
         val notifications = NotificationService.notifications
         iconBounds.clear()
-        
+
+        val isLandscape = utils.context.resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE
+
         val spacing = (utils.drawableSize * getIconSpacing(utils)).toInt()
-        val x: Int =
+        val x: Int = if (isLandscape) {
+            width
+        } else {
             if (utils.paint.textAlign == Paint.Align.LEFT) {
                 utils.horizontalRelativePoint.toInt()
             } else {
@@ -214,11 +244,15 @@ object NotificationIcons {
                     ) * (utils.drawableSize + spacing)
                 ) / 2
             }
-        val topPadding = utils.prefs.get(P.NOTIFICATION_ICON_TOP_PADDING, P.NOTIFICATION_ICON_TOP_PADDING_DEFAULT)
-        utils.viewHeight += utils.padding16 + utils.drawableSize / 2 + topPadding
+        }
+        
+        if (!isLandscape) {
+            val topPadding = utils.prefs.get(P.NOTIFICATION_ICON_TOP_PADDING, P.NOTIFICATION_ICON_TOP_PADDING_DEFAULT)
+            utils.viewHeight += utils.padding16 + utils.drawableSize / 2 + topPadding
+        }
 
         for (index in 0 until min(notifications.size, NOTIFICATION_LIMIT)) {
-            drawIcon(canvas, utils, x, index, isFingerprintTouched, touchedNotificationIndex)
+            drawIcon(canvas, utils, x, index, isFingerprintTouched, touchedNotificationIndex, isLandscape)
         }
     }
 }

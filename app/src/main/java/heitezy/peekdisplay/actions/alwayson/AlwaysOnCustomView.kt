@@ -4,6 +4,7 @@ import android.app.Activity
 import android.app.Notification
 import android.content.Context
 import android.content.Intent
+import android.content.res.Configuration
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.Canvas
@@ -372,7 +373,9 @@ class AlwaysOnCustomView : View {
         if (utils.prefs.get(P.SHOW_NOTIFICATION_COUNT, P.SHOW_NOTIFICATION_COUNT_DEFAULT)) {
             utils.viewHeight += utils.getTextHeight(utils.mediumTextSize) + 2 * utils.padding16
         }
-        if (utils.prefs.get(P.SHOW_NOTIFICATION_ICONS, P.SHOW_NOTIFICATION_ICONS_DEFAULT)) {
+        if (utils.prefs.get(P.SHOW_NOTIFICATION_ICONS, P.SHOW_NOTIFICATION_ICONS_DEFAULT) &&
+            resources.configuration.orientation != Configuration.ORIENTATION_LANDSCAPE
+        ) {
             utils.viewHeight += (NOTIFICATION_LIMIT / getNotificationRowLength(utils) + 1) * utils.drawableSize +
                 2 * utils.padding16 + utils.prefs.get(P.NOTIFICATION_ICON_TOP_PADDING, P.NOTIFICATION_ICON_TOP_PADDING_DEFAULT)
         }

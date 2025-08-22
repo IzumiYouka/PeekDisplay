@@ -3,6 +3,7 @@ package heitezy.peekdisplay.actions.alwayson.draw
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
+import android.content.res.Configuration
 import java.text.SimpleDateFormat
 import heitezy.peekdisplay.R
 import heitezy.peekdisplay.actions.alwayson.AlwaysOnCustomView
@@ -50,7 +51,8 @@ object ThemeSpecials {
         ) {
             // M-Style: Draw circular progress, time, date, and battery percent in the center
             val centerX = width / 2f
-            val defaultRadius = width * 0.3f
+            val isLandscape = utils.context.resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE
+            val defaultRadius = (if (isLandscape) 0.12f else 0.3f) * width
             val strokeWidth = utils.dpToPx(4f)
 
             val showClock = utils.prefs.get(P.SHOW_CLOCK, P.SHOW_CLOCK_DEFAULT)

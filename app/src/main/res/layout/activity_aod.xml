@@ -18,6 +18,5 @@
         android:id="@+id/fingerprintIcn"
         android:layout_width="@dimen/aod_fingerprint_size"
         android:layout_height="@dimen/aod_fingerprint_size"
-        android:layout_gravity="center_horizontal|bottom"
         android:visibility="gone"/>
 </heitezy.peekdisplay.custom.CustomFrameLayout>

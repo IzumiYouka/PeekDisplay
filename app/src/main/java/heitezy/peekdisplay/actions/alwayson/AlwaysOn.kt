@@ -1,5 +1,6 @@
 package heitezy.peekdisplay.actions.alwayson
 
+import android.annotation.SuppressLint
 import android.app.NotificationManager
 import android.content.BroadcastReceiver
 import android.content.ComponentName
@@ -252,8 +253,8 @@ class AlwaysOn : OffActivity(), NotificationService.OnNotificationsChangedListen
 
     private fun prepareFingerprintIcon() {
         viewHolder.fingerprintIcn.visibility = View.VISIBLE
-        (viewHolder.fingerprintIcn.layoutParams as ViewGroup.MarginLayoutParams)
-            .bottomMargin = prefs.get(P.FINGERPRINT_MARGIN, P.FINGERPRINT_MARGIN_DEFAULT)
+
+        updateFingerprintIconPosition()
         
         // Check the interaction mode preference
         val interactionMode = prefs.get(P.FINGERPRINT_INTERACTION_MODE, P.FINGERPRINT_INTERACTION_MODE_DEFAULT)
@@ -282,6 +283,31 @@ class AlwaysOn : OffActivity(), NotificationService.OnNotificationsChangedListen
                 }
             })
         }
+    }
+
+    @SuppressLint("RtlHardcoded")
+    private fun updateFingerprintIconPosition() {
+        // Get the layout parameters
+        val layoutParams = viewHolder.fingerprintIcn.layoutParams as FrameLayout.LayoutParams
+        val margin = prefs.get(P.FINGERPRINT_MARGIN, P.FINGERPRINT_MARGIN_DEFAULT)
+        
+        // Check if we're in landscape orientation
+        val isLandscape = resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE
+        
+        if (isLandscape) {
+            // Landscape: center vertically, align to right, use right margin
+            layoutParams.gravity = Gravity.CENTER_VERTICAL or Gravity.RIGHT
+            layoutParams.rightMargin = margin
+            layoutParams.bottomMargin = 0
+        } else {
+            // Portrait: center horizontally, align to bottom, use bottom margin
+            layoutParams.gravity = Gravity.CENTER_HORIZONTAL or Gravity.BOTTOM
+            layoutParams.bottomMargin = margin
+            layoutParams.rightMargin = 0
+        }
+        
+        // Apply the changes
+        viewHolder.fingerprintIcn.layoutParams = layoutParams
     }
 
     private fun prepareProximity() {
@@ -457,6 +483,38 @@ class AlwaysOn : OffActivity(), NotificationService.OnNotificationsChangedListen
     override fun onConfigurationChanged(newConfig: Configuration) {
         super.onConfigurationChanged(newConfig)
         (animationThread as? AlwaysOnAnimationThread)?.updateScreenSize()
+
+        // Update fingerprint icon positioning on orientation change
+        if (viewHolder.fingerprintIcn.visibility == View.VISIBLE) {
+            updateFingerprintIconPosition()
+        }
+
+        // Rebuild album art gradient orientation immediately on orientation change
+        val albumArtView = findViewById<ImageView>(R.id.album_art_overlay)
+        if (albumArtView != null && albumArtView.drawable is LayerDrawable) {
+            val currentDrawable = albumArtView.drawable as LayerDrawable
+            val bitmapLayer = currentDrawable.getDrawable(0) as? BitmapDrawable
+            val currentBitmap = bitmapLayer?.bitmap
+            if (currentBitmap != null) {
+                val screenWidth = resources.displayMetrics.widthPixels
+                val bitmapDrawable = BitmapDrawable(resources,
+                    Bitmap.createScaledBitmap(currentBitmap, screenWidth, screenWidth, true))
+                val tintDrawable = ColorDrawable(android.graphics.Color.argb(100, 0, 0, 0))
+                val gradientDrawable = GradientDrawable()
+                gradientDrawable.orientation = if (resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE)
+                    GradientDrawable.Orientation.LEFT_RIGHT else GradientDrawable.Orientation.TOP_BOTTOM
+                gradientDrawable.shape = GradientDrawable.RECTANGLE
+                gradientDrawable.colors = intArrayOf(
+                    android.graphics.Color.TRANSPARENT,
+                    android.graphics.Color.BLACK
+                )
+                gradientDrawable.gradientType = GradientDrawable.LINEAR_GRADIENT
+                val gradientOverlay = LayerDrawable(arrayOf(tintDrawable, gradientDrawable))
+                val layers = LayerDrawable(arrayOf(bitmapDrawable, gradientOverlay))
+                albumArtView.setImageDrawable(layers)
+                albumArtView.visibility = View.VISIBLE
+            }
+        }
     }
 
     @Suppress("LongMethod")
@@ -713,7 +771,8 @@ class AlwaysOn : OffActivity(), NotificationService.OnNotificationsChangedListen
                 
                 // Apply tint and add gradient
                 val drawable = GradientDrawable()
-                drawable.orientation = GradientDrawable.Orientation.TOP_BOTTOM
+                drawable.orientation = if (resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE)
+                    GradientDrawable.Orientation.LEFT_RIGHT else GradientDrawable.Orientation.TOP_BOTTOM
                 drawable.shape = GradientDrawable.RECTANGLE
                 drawable.colors = intArrayOf(
                     android.graphics.Color.TRANSPARENT,
@@ -752,7 +811,8 @@ class AlwaysOn : OffActivity(), NotificationService.OnNotificationsChangedListen
                 
                 // Create the gradient drawable
                 val gradientDrawable = GradientDrawable()
-                gradientDrawable.orientation = GradientDrawable.Orientation.TOP_BOTTOM
+                gradientDrawable.orientation = if (resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE)
+                    GradientDrawable.Orientation.LEFT_RIGHT else GradientDrawable.Orientation.TOP_BOTTOM
                 gradientDrawable.shape = GradientDrawable.RECTANGLE
                 gradientDrawable.colors = intArrayOf(
                     android.graphics.Color.TRANSPARENT,
