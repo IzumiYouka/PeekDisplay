@@ -87,7 +87,7 @@ object ThemeSpecials {
                     centerX + radius,
                     radius * 2 + strokeWidth / 2 + utils.topPadding
                 )
-                canvas.drawArc(oval, -260f, 80f, false, bgPaint)
+                canvas.drawArc(oval, -260f, 340f, false, bgPaint)
 
                 // Draw progress arc
                 val arcPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
