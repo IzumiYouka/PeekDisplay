@@ -69,7 +69,7 @@
     <string name="pref_look_and_feel_filter_notifications_empty_summary">Здається, що немає чого показувати</string>
     <string name="pref_look_and_feel_filter_notifications_unknown">Невідомий додаток</string>
     <string name="pref_look_and_feel_tint_notifications">Тонувати сповіщення</string>
-    <string name="pref_look_and_feel_tint_notifications_summary">Тонувати сповіщення в кольорах їхніх програм</string>
+    <string name="pref_look_and_feel_tint_notifications_summary">Тонувати сповіщення в кольорах їх програм</string>
     <string name="pref_look_and_feel_display_size">Розмір відображення</string>
     <string name="pref_look_and_feel_display_size_summary">Розмір відображення Peek Display становить %1$d%%</string>
     <string name="pref_look_and_feel_rules">Правила</string>
@@ -170,7 +170,7 @@
     <string name="pref_ao_showClock">Відображати час</string>
     <string name="pref_ao_showDate">Відображати дату</string>
     <string name="pref_ao_showBatteryIcn">Відображати значок батареї</string>
-    <string name="pref_ao_showBattery">Відображати відсотка заряду батареї</string>
+    <string name="pref_ao_showBattery">Відображати відсоток заряду батареї</string>
     <string name="pref_ao_showMusicControls">Відображати елементи керування музикою</string>
     <string name="pref_ao_showNotifications">Відображати кількість сповіщень</string>
     <string name="pref_ao_showNotificationIcons">Відображати значки сповіщень</string>

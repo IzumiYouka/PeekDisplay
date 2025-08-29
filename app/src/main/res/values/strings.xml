@@ -27,7 +27,7 @@
     <string name="app_name" translatable="false">Peek Display</string>
     <string name="app_description">Android app which adds Peek Display.</string>
 
-    <string name="date" translatable="false">EEE, MMMM d</string>
+    <string name="date" translatable="false">EEE, MMM d</string>
     <string name="percent" translatable="false">%1$d%%</string>
     <string name="charged">%1$d%% Charged</string>
     <string name="music" translatable="false">%1$s - %2$s</string>
