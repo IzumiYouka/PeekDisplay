@@ -32,6 +32,7 @@ This project is a modified version of AlwaysOn by Domi04151309,
 licensed under the GNU General Public License v3.
 
 Copyright (C) 2020 Domi04151309
+
 Copyright (C) 2025 Heitezy
 
 This program is free software: you can redistribute it and/or modify
