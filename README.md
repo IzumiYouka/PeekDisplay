@@ -1,6 +1,7 @@
 ![App Icon](https://raw.githubusercontent.com/Heitezy/PeekDisplay/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp)
 
 # Peek Display for Android™
+[![Crowdin](https://badges.crowdin.net/peekdisplay/localized.svg)](https://crowdin.com/project/peekdisplay)
 
 Peek Display brings a customizable Always-On Display to any device — perfect for AMOLED and OLED screens, and still useful on IPS displays. Personalize your experience with a variety of watch faces, background styles, and smart behaviors to match how you use your phone. With just a glance, get all the information you need in one place: time, date, battery level, current music, notifications, and more — no need to unlock your device.
 
@@ -30,6 +31,7 @@ LLC.</i>
 This project is a modified version of AlwaysOn by Domi04151309,
 licensed under the GNU General Public License v3.
 
+Copyright (C) 2020 Domi04151309
 Copyright (C) 2025 Heitezy
 
 This program is free software: you can redistribute it and/or modify
