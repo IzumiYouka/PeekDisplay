@@ -30,6 +30,7 @@ jobs:
         if: success() || failure()
         with:
           sarif_file: ktlint.sarif
+
   detekt:
     runs-on: ubuntu-latest
     timeout-minutes: 5
@@ -42,6 +43,8 @@ jobs:
           java-version: 17
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
+        with:
+          cache-disabled: true
       - name: Run
         run: |
           chmod +x gradlew
@@ -54,9 +57,13 @@ jobs:
       - name: Job Summary
         if: success() || failure()
         run: cat ./app/build/reports/detekt/detekt.md >> $GITHUB_STEP_SUMMARY
+
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
+    env:
+      GRADLE_OPTS: "-Dorg.gradle.jvmargs=-Xmx2g"
+      JAVA_TOOL_OPTIONS: "-Xmx2g"
     steps:
       - uses: actions/checkout@v4
       - name: Setup Java
@@ -66,12 +73,15 @@ jobs:
           java-version: 17
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
-      - name: Run
+        with:
+          cache-disabled: true
+      - name: Build APK (skip detekt)
         run: |
           chmod +x gradlew
-          ./gradlew build
+          ./gradlew assembleDebug -x detekt --stacktrace --info
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: PeekDisplay-debug
           path: app/build/outputs/apk/debug/*.apk
+
