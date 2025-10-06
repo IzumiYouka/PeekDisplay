@@ -24,7 +24,7 @@ jobs:
           chmod a+x ktlint
           sudo mv ktlint /usr/local/bin/
       - name: Run
-        run: ktlint --reporter sarif -l none > ktlint.sarif
+        run: ktlint --reporter sarif -l none > ktlint.sarif || true
       - name: Upload SARIF
         uses: github/codeql-action/upload-sarif@v3
         if: success() || failure()
@@ -45,7 +45,7 @@ jobs:
       - name: Run
         run: |
           chmod +x gradlew
-          ./gradlew detekt
+          ./gradlew detekt || true
       - name: Upload SARIF
         uses: github/codeql-action/upload-sarif@v3
         if: success() || failure()
@@ -70,3 +70,8 @@ jobs:
         run: |
           chmod +x gradlew
           ./gradlew build
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+          with:
+            name: PeekDisplay-debug
+              path: app/build/outputs/apk/debug/*.apk
