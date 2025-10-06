@@ -72,6 +72,6 @@ jobs:
           ./gradlew build
       - name: Upload APK
         uses: actions/upload-artifact@v4
-          with:
-            name: PeekDisplay-debug
-              path: app/build/outputs/apk/debug/*.apk
+        with:
+          name: PeekDisplay-debug
+          path: app/build/outputs/apk/debug/*.apk
